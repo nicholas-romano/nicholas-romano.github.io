@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: url('../Assets/concrete-texture/concrete-texture.png');
+    display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+    padding: 30px;
+    flex: 1 0 auto;
+}
+
+.banner {
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+    padding-right: 20px;
+
+}
+
+.logo {
+    text-align: center;
+    background-color: teal;
+    padding: 5px 0;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+.divider {
+    display: inline;
+    margin-left: 30px;
+    color: #ccc;
+}
+
+.nav {
+    width: 100%;
+    margin: 25px 30px 0 auto;
+    text-align: center;
+}
+
+.nav .nav-item .nav-link {
+    color: #888;
+}
+
+.nav .nav-item .nav-link.active {
+    color: #333;
+}
+
+.content {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.content header hr {
+    height: 2px;
+    background-color: #eee;
+}
+
+.content header h4 {
+    color: teal;
+}
+
+
+.project {
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    background-color: teal;
+    border: 1px solid teal;
+}
+
+.image-container {
+    background-color: #cdcdcd;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.project-title {
+    text-align: center;
+    color: white;
+    background-color: teal;
+    padding: 10px 0;
+}
+
+footer {
+  height: 100px;
+  background-color: #666;
+  color: #ccc;
+  padding-top: 40px;
+  flex-shrink: 0;
+}
+
+footer p {
+    margin: 0 auto;
+    width: 158px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        text-align: center;
+        background-color: teal;
+        padding: 5px 0;
+    }
+    
+    .logo h1 {
+        width: 250px;
+        margin: 20px auto;
+        text-align: center;
+        color: white;
+    }
+    
+    .nav.justify-content-end {
+        padding: 10px 0;
+        width: 360px;
+        margin: 0 auto;
+        justify-content: default;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .nav.justify-content-end {
+        padding: 10px 0;
+        width: 278px;
+        margin: 0 auto;
+        justify-content: default;
+        text-align: left;
+    }
+
+    .nav .nav-item .nav-link {
+        font-size: 10pt;
+    }
+
+    .divider {
+        margin-left: 10px;
+    }
+
+    .content img {
+        width: 150px;
+    }
+}
