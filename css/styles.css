@@ -11,6 +11,11 @@ html, body {
     flex: 1 0 auto;
 }
 
+.profile-bio {
+    text-indent: 50px;
+    line-height: 2em;
+}
+
 .banner {
     background-color: white;
     border-bottom: 2px solid #ccc;
@@ -46,10 +51,12 @@ html, body {
 
 .nav .nav-item .nav-link {
     color: #888;
+    cursor: pointer;
 }
 
 .nav .nav-item .nav-link.active {
     color: #333;
+    cursor: default;
 }
 
 .content {
@@ -70,6 +77,7 @@ html, body {
 
 .project {
     margin-bottom: 20px;
+    box-shadow: 3px 3px 3px #ccc;
 }
 
 .btn.btn-primary {
@@ -78,9 +86,11 @@ html, body {
 }
 
 .image-container {
-    background-color: #cdcdcd;
     text-align: center;
-    padding: 100px 0;
+}
+
+.image-container img {
+    max-height: 250px;
 }
 
 .project-title {
@@ -151,3 +161,16 @@ footer p {
         width: 150px;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .project-title h4 {
+        font-size: 16pt;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .project-title h4 {
+        font-size: 14pt;
+    }
+}
+
