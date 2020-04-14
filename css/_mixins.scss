@@ -1,0 +1,91 @@
+@mixin multi-color($c1, $c2, $c3, $c4, $c5) {
+  background: $c1; /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, $c1, $c2, $c3, $c4, $c5);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left, $c1, $c2, $c3, $c4, $c5);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left, $c1, $c2, $c3, $c4, $c5);
+  /* Standard syntax */
+  background: linear-gradient(to right, $c1, $c2, $c3, $c4, $c5);
+}
+
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin content_container_header($background-color) {
+  background-color: $background-color;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@mixin section_heading($width, $fontsize) {
+  width: $width;
+  font-size: $fontsize;
+  text-align: center;
+  border-bottom: 3px solid #cc0000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin project_container($background-color) {
+  background-color: $background-color;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@mixin project_heading() {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin project_title() {
+  border: $black_border;
+  margin-top: 10px;
+  float: left;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+@mixin project_description() {
+  border: none;
+  float: left;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  color: black;
+}
+
+.tab-pane {
+    padding: 5px 0 0 0;
+}
+
+@mixin details_heading() {
+  font-weight: bold;
+}
+
+@mixin tech-icons() {
+  max-width: 100px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}

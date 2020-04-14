@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Space Fighters</title>
+  <link href="css/space-fighters.css" rel="stylesheet" type="text/css">
+  <script src="js/space-fighters.js"></script>
+</head>
+<body onload="init()">
+  <script src="js/howler.js"></script>
+  <div id="screen">
+    <div id="dialogue_begin">
+      <div id="game_results">
+        <div id="wins_message">
+          <h4>Wins:</h4>
+          <div id="wins">0</div>
+        </div>
+        <div id="loses_message">
+          <h4>Loses:</h4>
+          <div id="loses">0
+        </div>
+      </div>
+      </div>
+        <h1 id="b_dialogue-heading">Space Fighters</h1>
+        <div id="b_dialogue-body">
+          <img src="images/rocketship-small.png" class="lives-img" alt="Rocketship">
+          <div class="lives-text">
+            <h3>
+              <span> X </span>
+              <span id="b_lives-amt"></span>
+            </h3>
+          </div>
+        </div>
+        <div id="how-to-play">
+          <h3>How to play:</h3>
+          <ul>
+            <li><b>Fire missle:</b> Press Spacebar</li>
+            <li><b>Move left and right:</b> Move Computer Mouse</li>
+          </ul>
+          <p><b>Objective:</b> Shoot all of the UFOs on the screen to win the game.
+            Avoid colliding with them, or you will lose 1 life. If you lose all 3
+            lives, you lose the game. Good Luck!
+          </p>
+        </div>
+        <button id="action_button">Play game</button>
+    </div>
+
+    <div id="dialogue_lostship">
+        <h1 id="ls_dialogue-heading">Lost Ship</h1>
+        <div id="ls_dialogue-body">
+          <img src="images/rocketship-small.png" class="lives-img" alt="Rocketship">
+          <span class="lives-text">
+            <h3>
+              <span> X </span>
+              <span id="ls_lives-amt"></span>
+            </h3>
+          </span>
+        </div>
+    </div>
+
+    <div id="dialogue_gameover">
+        <h1 id="go_dialogue-heading"></h1>
+        <div id="go_dialogue-body">
+        </div>
+    </div>
+
+    <img id="explosion" src="images/explosion.png" alt="explosion">
+    <img id="missle" src="images/missle.png" alt="missle">
+    <img id="rocketship" src="images/rocketship.png" alt="Rocketship">
+  </div>
+</body>
+
+</html>

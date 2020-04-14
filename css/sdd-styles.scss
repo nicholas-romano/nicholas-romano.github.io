@@ -1,0 +1,518 @@
+@import "./mixins.scss";
+
+$background: white;
+$banner-text-color: white;
+$headline-text-color: white;
+$text-padding: 10px;
+$standard-font: Arial, sans-serif;
+$headline-background: url('../images/headline_gears_img.jpg');
+$black_border: 1px solid black;
+$round-border: 10px;
+$dark-blue: #0000cc;
+$dark-red: #cc0000;
+$white: #fff;
+
+body {
+  font-family: $standard-font;
+
+  main {
+    padding-top: 182px;
+  }
+
+  header {
+    color: $banner-text-color;
+    @include multi-color(red, blue, green, purple, white);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+
+    h1 {
+      color: $white;
+      @include text-shadow(3px, 3px, 3px, black);
+      z-index: 2;
+      text-align: center;
+    }
+
+    img {
+      float: left;
+      background-color: $background;
+      margin-right: 10px;
+    }
+  }
+
+  #banner {
+    min-height: 130px;
+    padding-top: 2px;
+
+
+    nav .navbar-nav .nav-link {
+          color: white;
+    }
+
+    nav .navbar-nav .nav-link:hover {
+          color: navy;
+          background-color: white;
+
+    }
+
+    .dropdown-item {
+      background-color: white;
+      color: navy;
+      opacity: .8;
+    }
+
+    .dropdown-item:hover {
+      background-color: navy;
+      color: white;
+    }
+
+
+  }
+
+  #headline {
+
+    background-image: $headline-background;
+    color: $headline-text-color;
+    text-align: center;
+    height: 300px;
+    h1 {
+      font-size: 36px;
+      padding-top: 115px;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+    h5 {
+      font-size: 18px;
+    }
+
+  }
+
+  #project_section {
+    height: 100px;
+    width: 100%;
+    float: left;
+  }
+
+  section#services.content_section {
+    background-image: url('../images/services_background.png');
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: 50% 20%;
+    background-color: transparent;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    h3 {
+      @include section_heading(300px, 24pt);
+    }
+
+    .services_left_column {
+      width: 50%;
+      float: left;
+      background: transparent;
+      .services_icons {
+        margin: 10px;
+
+      }
+    }
+    .services_right_column {
+      float: left;
+      width: 50%;
+      background: transparent;
+
+      .services_icons {
+        margin: 10px;
+        float: right;
+      }
+    }
+
+  }
+
+  section#expect_from_us.content_section {
+      padding: 15px;
+      float: left;
+      width: 100%;
+      h3 {
+        @include section_heading(320px, 24pt);
+      }
+
+      h5 {
+        text-align: center;
+      }
+
+      #appealing.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#7e1ca1);
+        }
+      }
+
+      #easy_to_use.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#cc0000);
+        }
+      }
+
+      #consistent.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#2db60d);
+        }
+      }
+
+      #reliable.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#06DBF7);
+        }
+      }
+
+      #interactive.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#eaf906);
+        }
+      }
+
+      #secure.content_container {
+        margin-bottom: 15px;
+        border: $black_border;
+        @include border-radius(3px);
+        h4 {
+          @include text-shadow(3px, 3px, 3px, black);
+          @include border-radius(3px);
+          @include content_container_header(#f96806);
+        }
+      }
+  }
+
+  .category {
+    padding: 20px;
+  }
+
+  .note {
+    margin-left: 15px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+  }
+
+  .project {
+    margin-bottom: 15px;
+  }
+
+   div.tab-content.project-description {
+    @include project_description();
+    h5 {
+      @include details_heading();
+    }
+    .tech-icons {
+       @include tech-icons();
+    }
+
+  }
+
+
+  .project .nav.nav-tabs .nav-item {
+    display: inline;
+    background-color: #eee;
+  }
+
+  .project .nav-tabs .nav-item.show .nav-link, .nav-tabs {
+    background-color: #eee;
+  }
+
+  section#project_porfolio.content_section {
+    padding: 15px;
+    float: left;
+    width: 100%;
+    h3 {
+      @include section_heading(230px, 24pt);
+    }
+    #webpage-designs.category {
+      @include project_container(#7e1ca1);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+    }
+
+
+    #mobile-app-design.category {
+
+      #jssor_1 {
+        background-color: white;
+        border-radius: 15px;
+        border: 10px solid #333;
+      }
+      @include project_container(#27AAE1);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+
+    }
+
+    #websites.category {
+      @include project_container(#ED1C24);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+
+    }
+    #informational.category {
+      @include project_container(#7e1ca1);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+    }
+    #applications.category {
+      @include project_container(#f96806);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+    }
+    #games.category {
+      @include project_container(#eaf906);
+      h4 {
+        @include project_heading();
+        @include text-shadow(3px, 3px, 3px, black);
+      }
+      h3 {
+        @include project_title();
+      }
+    }
+  }
+
+
+
+  /* Contact */
+
+  .main_category.contact {
+    background-color: navy;
+  	float: left;
+  	width: 100%;
+  	}
+
+  .main_category.contact h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 10px;
+  	}
+
+  .contact_form {
+  	background-color: #fff;
+  	border: 5px solid #000;
+  	-moz-border-radius: 15px;
+  	border-radius: 15px;
+  	padding: 15px;
+  	margin: 15px 15px 100px 15px;
+  }
+
+  .main_category.contact .contact_form h1 {
+      width: 275px;
+      margin-left: 0;
+      margin-right: auto;
+      border: 0;
+      color: #000;
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      background-image: none;
+      text-shadow: none;
+  }
+
+  .required {
+  	color: red;
+  	}
+
+
+  .name_error, .email_error, .message_error,
+  .name_valid_error, .company_valid_error, .email_valid_error,
+  .phone_valid_error, .message_valid_error {
+           display: none;
+           color: red;
+           font-size: 12px;
+          }
+
+          .no_bullets {
+              list-style-type: none;
+          }
+
+  .btn.btn-primary { /*submit button */
+              font-weight: bold;
+              font-size: 16px;
+          }
+
+  .message_sent_confirmation {
+              padding: 50px;
+              margin: 50px;
+              background-color: #fff;
+              border: 1px solid #000;
+              margin-left: auto;
+              margin-right: auto;
+              width: auto;
+              border-radius: 10px;
+          }
+
+  /* End Contact */
+
+  .column {
+    border: 5px solid #000;
+    border-radius: $round-border;
+    margin: 10px;
+
+    .column-content {
+      background-color: $white;
+      padding: 15px;
+      border-radius: $round-border;
+    }
+
+    .tile {
+      text-align: center;
+      padding: 15px;
+      margin: 10px 0;
+      border: $black_border;
+      border-radius: $round-border;
+    }
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+  }
+
+  .content_section.about_us {
+    background-color: navy;
+    padding: 10px;
+
+    h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+
+    }
+  }
+
+  footer {
+      width: 100%;
+      clear: both;
+      padding: 15px;
+      @include multi-color(red, blue, green, purple, white);
+      text-align: center;
+      border: $black_border;
+      color: black;
+      p {
+        background-color: white;
+        padding: 10px 0;
+        color: black;
+      }
+  }
+
+  @media screen and (min-width: 767px) {
+
+    .navbar-nav .nav-link {
+      padding: 10px 20px;
+      margin: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+
+     .navbar-nav .nav-link {
+          color: white;
+          text-align: center;
+          background-color: navy;
+          opacity: .8;
+          padding: 10px 20px;
+          margin: 0;
+    }
+
+     .navbar-nav .nav-link:hover {
+          color: navy;
+          text-align: center;
+          background-color: white;
+
+    }
+
+
+
+    .navbar-toggler:hover {
+      cursor: pointer;
+    }
+
+    .nav-item .nav-link {
+      color: white;
+      text-align: center;
+      background-color: navy;
+      opacity: .8;
+      padding: 10px 20px;
+      margin: 0;
+    }
+
+    .dropdown-item {
+      background-color: white;
+      color: navy;
+      opacity: .8;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .dropdown-item:hover {
+      background-color: navy;
+      color: white;
+    }
+
+    .project .nav.nav-tabs .nav-item .nav-link.active {
+      background-color: white;
+      color: black;
+    }
+
+    .project .nav.nav-tabs .nav-item .nav-link {
+      background-color: #eee;
+      color: #007bff;
+    }
+
+  }
+
+}

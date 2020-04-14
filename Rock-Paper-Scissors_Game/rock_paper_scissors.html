@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Rock Paper Scissors</title>
+		<link href="css/rock_paper_scissors.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Arimo:700|Gidugu|Quattrocento|Quicksand" rel="stylesheet">
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="rock_paper_scissors.js"></script>
+	</head>
+	<body>
+
+		<div id="main_container">
+			<div id="hidden_final_stage">
+				<div id="hidden_stage3">
+					<div id="hidden_stage2">
+						<div id="stage_one">
+							<h1>Rock, Paper, Scissors <br />
+							Tournament</h1>
+							
+							<div id="play_tournament">
+								<button id="playTournament">Play Tournament</button>
+							</div>
+							<div id="abort_tournament">
+								<button id="abortTournament">Abort Tournament</button>
+							</div>
+						</div>
+						<form id="rounds">
+							<div id="amount_of_games">
+								<h4>How many wins would you like to play to?</h4>
+							</div>
+							<select id="round_wins">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<input type="submit" value="Submit" />
+						</form>
+					</div>
+					<div id="game_space">
+							
+							<h2 id="tournament_winner_needs">Tournament winner needs <br /> to win <span id="winner_goal"></span> <span id="round_or_rounds"></span></h2>
+							<div id="round_count">
+								<h2>Round <br />
+									<span id="current_round">1</span>
+								</h2>
+							</div>
+							<div id="score">
+								<div id="YourScore">
+									<h2>You: <br /> <span id="yourPoints">0</span></h2>
+								</div>
+								<div id="ComputerScore">
+									<h2>Computer: <br /> <span id="computerPoints">0</span></h2>
+								</div>
+							</div>
+							
+							<div id="player_options">
+				
+								<h4>Choose your move from the button choices below:</h4>
+								
+								<div id="playerMove">
+									<button id="rock" value="rock">Rock</button>
+									<button id="paper" value="paper">Paper</button>
+									<button id="scissors" value="scissors">Scissors</button>
+								</div>
+								
+								
+							</div>
+							<div class="playing_field">
+								
+									
+								<img id="image" src="images/Player-Rock-Move.png" alt="Player Move" height="200" width="200"/>
+									
+									
+								<img id="image2" src="images/Rock-Move.png" alt="Computer Move" height="200" width="200" />
+									
+									
+								
+								
+							</div>
+							
+							<div id="play_result">
+								<div id="YourMove">
+									<h4></h4>
+								</div>
+								<div id="win_or_lose">
+									<h2></h2>
+								</div>
+								<div id="ComputerMove">
+									<h4></h4>
+								</div>
+								
+							</div>
+					</div>
+				</div>
+				<div id="tournamentWinner">
+					<h2></h2>
+				</div>
+			</div>
+		</div>			
+			
+	</body>
+</html>

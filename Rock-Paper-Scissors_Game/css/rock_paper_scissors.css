@@ -1,0 +1,410 @@
+                /*
+		 *Google Fonts:
+		 font-family: 'Arimo', sans-serif;
+		    font-family: 'Gidugu', sans-serif;
+		    font-family: 'Quicksand', sans-serif;
+		    font-family: 'Quattrocento', serif;
+		
+		*/
+		
+		#main_container {
+                    width: 700px;
+                    margin: 0 auto;
+		    padding-top: 25px;
+                    text-align: center;
+		    background-repeat: no-repeat;
+                }
+		
+		#main_container h1 {
+		    padding-top: 40px;
+		    margin-left: 70px;
+		    margin-bottom: -25px;
+		    width: 560px;
+		    height: 200px;
+		    font-family: 'Quattrocento', serif;
+		    font-size: 32pt;
+		    background-image: url('../images/Tournament_Heading.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#stage_one {
+		    background-image: url('../images/Tournament_Background_Stage1.png');
+		    background-repeat: no-repeat;
+		    width: 700px;
+		    height: 390px;
+		    padding-top: 25px;
+		}
+		
+		#stage_two {
+		    background-image: url('../images/Tournament_Background_Stage2.png');
+		    background-repeat: no-repeat;
+		    width: 700px;
+		    height: 550px;
+		    padding-top: 25px;
+		}
+		
+		#stage_three {
+		    background-image: url('../images/Tournament_Background_Stage3.png');
+		    background-repeat: no-repeat;
+		    width: 700px;
+		    height: 1350px;
+		    padding-top: 25px;
+		}
+		
+		#final_stage {
+		    background-image: url('../images/Tournament_Background_FinalStage.png');
+		    background-repeat: no-repeat;
+		    width: 700px;
+		    height: 1450px;
+		    padding-top: 25px;
+		}
+		
+		#play_tournament {
+		    width: 265px;
+		    margin: 0 auto;
+		    text-align: center;
+		}
+		
+		#playTournament {
+		    font-size: 24pt;
+		    color: #594330;
+		    cursor: pointer;
+		    padding: 10px;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		}
+		
+		#abort_tournament {
+			width: 220px;
+			margin: 0 auto;
+			text-align: center;
+			display: none;
+		}
+		
+		#abortTournament {
+		    font-size: 12pt;
+		    color: #594330;
+		    cursor: pointer;
+		    padding: 8px;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		}
+		
+		#amount_of_games {
+		    width: 472px;
+		    height: 82px;
+		    margin: 15px auto;
+		    padding-top: 5px;
+		    background-image: url('../images/Amount_of_Games.png');
+		    background-repeat: no-repeat;
+		}
+
+		#rounds {
+		    display: none;
+		}
+		
+		#rounds h4 {
+		    font-size: 16pt;
+		}
+		
+		#round_wins {
+		    
+		    cursor: pointer;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		    padding: 5px;
+		}
+		
+		#rounds #round_wins  {
+		    color: #594330;
+		    font-size: 12pt;
+		    font-weight: bold;
+		}
+		
+		#rounds input {
+		    color: #594330;
+		    cursor: pointer;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		    padding: 5px;
+		    font-weight: bold;
+		    font-size: 12pt;
+		}
+		
+		#game_space {
+		    display: none;
+		}
+                
+		#game_space h2#tournament_winner_needs {
+		    width: 436px;
+		    height: 130px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: 15px;
+		    padding-top: 32px;
+		    font-family: 'Arimo', sans-serif;
+		    text-align: center;
+		    font-size: 20pt;
+		    background-image: url('../images/Needs_To_Win_heading.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#round_count {
+		    
+		    width: 153px;
+		    height: 112px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: -20px;
+		    padding-top: 1px;
+		    font-family: 'Quicksand', sans-serif;
+		    font-weight: bold;
+		    font-size: 14pt;
+		    background-image: url('../images/Round_Number.png');
+		    background-repeat: no-repeat;
+		}
+		
+		
+		.playing_field {
+		    
+		    margin: 0 auto;
+                }
+		
+		#YourScore {
+		    width: 160px;
+		    height: 120px;
+		    margin-left: 110px;
+		    margin-top: -50px;
+		    padding-top: 10px;
+		    float: left;
+		    font-family: 'Quicksand', sans-serif;
+		    background-image: url('../images/your_score_count.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#ComputerScore {
+		    width: 225px;
+		    height: 120px;
+		    margin-top: -50px;
+		    margin-right: 47px;
+		    padding-top: 10px;
+		    float: right;
+		    font-family: 'Quicksand', sans-serif;
+		    background-image: url('../images/computer_score_count.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#YourMove {
+		    display: none;
+		    width: 225px;
+		    height: 120px;
+		    padding-top: 30px;
+		    float: left;
+		    font-family: 'Arimo', sans-serif;
+		    font-size: 11pt;
+		    background-image: url('../images/you_chose.png');
+		    background-repeat: no-repeat;
+		}
+                
+		#ComputerMove {
+		    display: none;
+		    width: 260px;
+		    height: 120px;
+		    float: left;
+		    padding-top: 30px;
+		    font-family: 'Arimo', sans-serif;
+		    font-size: 11pt;
+		    background-image: url('../images/computer_move.png');
+		    background-repeat: no-repeat;
+		}
+		
+                #play_result {
+		    margin-left: 50px;
+                    text-align: center;
+                }
+		
+		#player_options {
+		    text-align: center;
+		    width: 100%;
+		   float: left;
+		}
+		
+		#player_options h4 {
+		    margin: 0 auto;
+		    width: 545px;
+		    height: 84px;
+		    padding-top: 30px;
+		    font-family: 'Arimo', sans-serif;
+		    font-size: 14pt;
+		    background-image: url('../images/choose_move.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#playerMove button {
+		    
+		    font-size: 16pt;
+		    color: #594330;
+		    cursor: pointer;
+		    padding: 10px;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		}
+		
+		#win_or_lose {
+		    display: none;
+		    float: left;
+		    width: 115px;
+		    height: 110px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding-top: 1px;
+		    font-family: 'Quicksand', sans-serif;
+		    font-weight: bold;
+		    font-size: 14pt;
+		    background-image: url('../images/round_result.png');
+		    background-repeat: no-repeat;
+		}
+		
+		#tournamentWinner {
+		    width: 600px;
+		    height: 130px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: 15px;
+		    padding-top: 10px;
+		    font-family: 'Arimo', sans-serif;
+		    text-align: center;
+		    font-size: 14pt;
+		    
+		}
+		
+		#resetTournament {
+		    font-size: 12pt;
+		    color: #594330;
+		    cursor: pointer;
+		    padding: 8px;
+		    border-radius: 5px;
+		    background-color: #EFE4AC;
+		}
+		
+		@-moz-keyframes imageanimation {
+			0% { -moz-transform: rotate(0deg); }
+			50% { -moz-transform: rotate(24deg); }
+			100% { -moz-transform: rotate(0deg);}
+		}
+		
+		@-webkit-keyframes imageanimation {
+			0% { -webkit-transform: rotate(0deg); }
+			50% { -webkit-transform: rotate(24deg); }
+			100% { -webkit-transform: rotate(0deg);}
+		}
+		
+		@keyframes imageanimation {
+			0% {transform: rotate(0deg);}
+			50% {transform: rotate(24deg);}
+			100% {transform: rotate(0deg);}
+		}
+                
+               
+		
+		@-webkit-keyframes rotate {
+		    0% {
+		      -webkit-transform: rotate(0deg);
+		    }
+		    50% {
+		      -webkit-transform: rotate(28deg);
+		    }
+		    100% {
+		      -webkit-transform: rotate(0deg);
+		    }
+		  }
+		  @keyframes rotate {
+		    0% {
+		      transform: rotate(0deg);
+		    }
+		    50% {
+		      transform: rotate(28deg);
+		    }
+		    100% {
+		      transform: rotate(0deg);
+		    }
+		}
+		
+		@-webkit-keyframes rotate2 {
+		    0% {
+		      -webkit-transform: rotate(0deg);
+		    }
+		    50% {
+		      -webkit-transform: rotate(-28deg);
+		    }
+		    100% {
+		      -webkit-transform: rotate(0deg);
+		    }
+		  }
+		  @keyframes rotate2 {
+		    0% {
+		      transform: rotate(0deg);
+		    }
+		    50% {
+		      transform: rotate(-28deg);
+		    }
+		    100% {
+		      transform: rotate(0deg);
+		    }
+		}
+		
+		#image {
+                        float: left;
+			display: none;
+			position: relative;
+			margin-left: 40px;
+			
+			width: 300px;
+			height: 300px;
+			
+			background-color: transparent;
+
+		}
+		
+		#image.rotate {
+			/* Move Count-down with fist image rotating */
+			display: block;
+			position: relative;
+						
+			width: 300px;
+			height: 300px;
+			
+			-webkit-animation: rotate 0.5s 3 linear;
+			animation: rotate 0.5s 3 linear;
+			
+
+		}
+                
+                #image2 {
+                        float: right;
+                        display: none;
+			position: relative;
+			margin-right: 40px;
+			
+			width: 300px;
+			height: 300px;
+			
+                }
+                
+                #image2.rotate {
+			
+			/* Move Count-down with fist image rotating */
+			
+			display: block;
+			position: relative;
+						
+			width: 300px;
+			height: 300px;
+			
+			background-color: transparent;
+			
+			-webkit-animation: rotate2 0.5s 3 linear;
+			animation: rotate2 0.5s 3 linear;
+
+		}
+		

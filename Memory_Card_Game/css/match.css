@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #309454;
+  
+  background: -webkit-radial-gradient(circle, #54D166, #309454); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(circle, #54D166, #309454); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #54D166, #309454); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #54D166, #309454); /* Standard syntax */
+}
+}
+
+.board {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 3em;
+  color: #D4AF37;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  
+ /* text-shadow: rgba(197,179,88, 0.3); */
+}
+
+.board div {
+  width: 90px;
+  height: 115px;
+  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  float: left;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.board.standard div {
+  background-image: url('../images/cardbacks/standard.jpg');
+}
+
+.board.beach_paradise div {
+  background-image: url('../images/cardbacks/beach_paradise.jpg');
+}
+
+.board.mountains div {
+  background-image: url('../images/cardbacks/mountains.jpg');
+}
+
+.board.astronaut div {
+  background-image: url('../images/cardbacks/astronaut.jpg');
+}
+
+.board.blue_angels div {
+  background-image: url('../images/cardbacks/blue_angels.jpg');
+}
+
+.board div.flipUp {
+  background-color: white;
+  border: 1px solid #000;
+  background-image: none;
+}
+
+button {
+  background-color: #964F4D;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 10px;
+}
+
+#reset {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .board {
+    width: 870px;
+  }
+}
+
+
+@media screen and (max-width: 864px) {
+  .board {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .board {
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .board {
+    width: 510px;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .board {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .board {
+    width: 240px;
+  }
+  h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2.5em;
+}
+}

@@ -1,0 +1,125 @@
+body {
+  background-color: #06003D;
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#screen {
+  width: 94%;
+}
+
+#wins_container{
+  display: none;
+}
+
+#wins_message {
+  width: 100px;
+  float: left;
+}
+
+#loses_message {
+  width: 100px;
+  float: right;
+}
+
+#dialogue_lostship, #dialogue_gameover {
+  display: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #eee;
+  width: 40%;
+  height: 40%;
+  margin: 10% auto 10% auto;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+#dialogue_begin {
+  display: block;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #eee;
+  width: 40%;
+  height: 40%;
+  margin: 10% auto 10% auto;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+#b_dialogue-body, #ls_dialogue-body, #go_dialogue-body {
+  width: 150px;
+  margin: 0 auto;
+}
+
+#how-to-play {
+  font-size: 12px;
+  text-align: left;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+#how-to-play h3 {
+  margin-left: 30px;
+}
+
+#how-to-play p {
+  margin-left: 30px;
+}
+
+.lives-img {
+  width: 49px;
+  margin-left: auto;
+}
+
+.lives-text {
+  font-size: 20px;
+  width: 70px;
+  float: right;
+}
+
+.lives-text h3 span {
+  width: 35px;
+  margin: 5px;
+}
+
+#action_button {
+  font-family: Arial, sans-serif;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#action_button:hover {
+  background-color: #9ee8e7;
+  cursor: pointer;
+}
+
+#timer {
+  background-color: white;
+  color: black;
+  width: 100px;
+  float: right;
+  padding: 10px;
+}
+
+#rocketship {
+  z-index: 2;
+}
+
+#explosion {
+  visibility: hidden;
+  z-index: 4;
+}
+
+#explosion2 {
+  visibility: hidden;
+}
+
+#missle {
+  z-index: 1;
+}
