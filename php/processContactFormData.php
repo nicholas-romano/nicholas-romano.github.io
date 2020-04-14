@@ -1,7 +1,6 @@
 <?php
 
   if (isset($_POST['submit'])) {
-    //var_dump($_POST);
 
     $recaptcha_secret = '6LccgekUAAAAAHEs8t9NqVoT8qCUsNBB7pdxn5B6';
     $recaptcha_response = $_POST['g-recaptcha-response'];
@@ -56,14 +55,12 @@
                       '<li><b>Message:</b> ' . $message . '</li>'.
                   '</ul>');
 
-
       mail($to, $subject, $mail_message, $headers);
-      ?>
-      <h2>Thank you, <?php echo $name ?>.</h2>
-                      <p>Your message has been sent. I will reply to your message with the email you provided as soon as I can.</p>
-                      <p><a href="index.html">Go back to Stylin' Digital Designs home page.</a></p>
-    <?php
       
+      echo '<h2>Thank you,' . $name . '</h2>
+              <p>Your message has been sent. I will reply to your message with the email you provided as soon as I can.</p>
+              <p><a href="index.html">Go back to Stylin\' Digital Designs home page.</a></p>';
+
     }
     else {
       //Verification failed:
