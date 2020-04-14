@@ -72,8 +72,3 @@
     //form not submitted:
     header('Location: contact.html');
   }
-  
-?>
-  
-
-
