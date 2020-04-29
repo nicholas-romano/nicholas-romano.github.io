@@ -6,51 +6,54 @@ body {
   /* Contact */
   /* End Contact */ }
   body main {
-    padding-top: 182px; }
+    padding-top: 140px; }
   body header {
-    color: white;
-    background: red;
-    /* For browsers that do not support gradients */
-    /* For Safari 5.1 to 6.0 */
-    background: -webkit-linear-gradient(left, red, blue, green, purple, white);
-    /* For Opera 11.1 to 12.0 */
-    background: -o-linear-gradient(left, red, blue, green, purple, white);
-    /* For Fx 3.6 to 15 */
-    background: -moz-linear-gradient(left, red, blue, green, purple, white);
-    /* Standard syntax */
-    background: -webkit-gradient(linear, left top, right top, from(red), color-stop(blue), color-stop(green), color-stop(purple), to(white));
-    background: linear-gradient(to right, red, blue, green, purple, white);
+    background-color: #EBEBEB;
+    border-bottom: 2px solid #262B5E;
+    -webkit-box-shadow: 2px 2px 2px #808080;
+    box-shadow: 2px 2px 2px #808080;
     position: fixed;
     width: 100%;
     margin: 0;
     z-index: 1; }
-    body header h1 {
-      color: #fff;
-      text-shadow: 3px 3px 3px black;
-      z-index: 2;
-      text-align: center; }
     body header img {
       float: left;
       background-color: white;
       margin-right: 10px; }
   body #banner {
-    min-height: 130px;
-    padding-top: 2px; }
+    min-height: 80px; }
+    body #banner a.logo-text:hover {
+      text-decoration: none; }
+    body #banner h1 {
+      color: #262B5E;
+      font-size: 38px;
+      font-weight: bold;
+      z-index: 2;
+      text-align: center; }
+    body #banner nav .navbar-nav {
+      max-width: 455px;
+      margin: 0 auto; }
     body #banner nav .navbar-nav .nav-link {
-      color: white; }
-    body #banner nav .navbar-nav .nav-link:hover {
-      color: navy;
-      background-color: white; }
+      color: black;
+      font-weight: bold;
+      border-bottom: 2px solid transparent; }
+    body #banner nav .navbar-nav .nav-link:hover,
+    body #banner nav .navbar-nav .nav-link.active {
+      color: #cc0000;
+      text-shadow: 3px 3px 3px #fff;
+      border-bottom: 2px solid #262B5E; }
     body #banner .dropdown-item {
       background-color: white;
-      color: navy;
+      border-bottom: 2px solid transparent;
+      color: black;
       opacity: .8; }
     body #banner .dropdown-item:hover {
-      background-color: navy;
-      color: white; }
+      color: #cc0000;
+      border-bottom: 2px solid #262B5E;
+      cursor: pointer; }
   body #headline {
     background-image: url("../images/headline_gears_img.jpg");
-    color: white;
+    color: #fff;
     text-align: center;
     height: 300px; }
     body #headline h1 {
@@ -77,7 +80,7 @@ body {
       width: 300px;
       font-size: 24pt;
       text-align: center;
-      border-bottom: 3px solid #cc0000;
+      border-bottom: 3px solid #262B5E;
       margin-left: auto;
       margin-right: auto; }
     body section#services.content_section .services_left_column {
@@ -101,121 +104,26 @@ body {
       width: 320px;
       font-size: 24pt;
       text-align: center;
-      border-bottom: 3px solid #cc0000;
+      border-bottom: 3px solid #262B5E;
       margin-left: auto;
       margin-right: auto; }
     body section#expect_from_us.content_section h5 {
       text-align: center; }
-    body section#expect_from_us.content_section #appealing.content_container {
+    body section#expect_from_us.content_section .content_container {
       margin-bottom: 15px;
       border: 1px solid black;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       -ms-border-radius: 3px;
       border-radius: 3px; }
-      body section#expect_from_us.content_section #appealing.content_container h4 {
+      body section#expect_from_us.content_section .content_container h4 {
         text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #7e1ca1;
+        border-radius: 3px 3px 0 0;
+        background-color: #262B5E;
         text-align: center;
         color: white;
         padding-top: 5px;
         padding-bottom: 5px; }
-    body section#expect_from_us.content_section #easy_to_use.content_container {
-      margin-bottom: 15px;
-      border: 1px solid black;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
-      body section#expect_from_us.content_section #easy_to_use.content_container h4 {
-        text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #cc0000;
-        text-align: center;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-    body section#expect_from_us.content_section #consistent.content_container {
-      margin-bottom: 15px;
-      border: 1px solid black;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
-      body section#expect_from_us.content_section #consistent.content_container h4 {
-        text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #2db60d;
-        text-align: center;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-    body section#expect_from_us.content_section #reliable.content_container {
-      margin-bottom: 15px;
-      border: 1px solid black;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
-      body section#expect_from_us.content_section #reliable.content_container h4 {
-        text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #06DBF7;
-        text-align: center;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-    body section#expect_from_us.content_section #interactive.content_container {
-      margin-bottom: 15px;
-      border: 1px solid black;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
-      body section#expect_from_us.content_section #interactive.content_container h4 {
-        text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #eaf906;
-        text-align: center;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-    body section#expect_from_us.content_section #secure.content_container {
-      margin-bottom: 15px;
-      border: 1px solid black;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px; }
-      body section#expect_from_us.content_section #secure.content_container h4 {
-        text-shadow: 3px 3px 3px black;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-color: #f96806;
-        text-align: center;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-  body .category {
-    padding: 20px; }
   body .note {
     margin-left: 15px;
     padding: 5px;
@@ -251,24 +159,27 @@ body {
       width: 230px;
       font-size: 24pt;
       text-align: center;
-      border-bottom: 3px solid #cc0000;
+      border-bottom: 3px solid #262B5E;
       margin-left: auto;
       margin-right: auto; }
-    body section#project_porfolio.content_section #webpage-designs.category {
-      background-color: #7e1ca1;
+    body section#project_porfolio.content_section .category {
+      padding: 20px;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 4px 4px 5px gray;
+      box-shadow: 4px 4px 5px gray;
+      border-radius: 10px;
+      border: 1px solid black;
+      background-color: #262B5E;
       color: white;
       padding-top: 5px;
       padding-bottom: 5px; }
-      body section#project_porfolio.content_section #webpage-designs.category h4 {
+      body section#project_porfolio.content_section .category h4 {
         color: white;
-        font-weight: bold;
         font-size: 32px;
         padding-left: 15px;
         padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #webpage-designs.category h3 {
-        border: 1px solid black;
+        padding-bottom: 10px; }
+      body section#project_porfolio.content_section .category h3 {
         margin-top: 10px;
         float: left;
         font-weight: bold;
@@ -276,113 +187,30 @@ body {
         background-color: white;
         width: 100%;
         padding: 10px; }
-    body section#project_porfolio.content_section #mobile-app-design.category {
-      background-color: #27AAE1;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      body section#project_porfolio.content_section #mobile-app-design.category #jssor_1 {
+      body section#project_porfolio.content_section .category #jssor_1 {
         background-color: white;
         border-radius: 15px;
-        border: 10px solid #333; }
-      body section#project_porfolio.content_section #mobile-app-design.category h4 {
-        color: white;
-        font-weight: bold;
-        font-size: 32px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #mobile-app-design.category h3 {
-        border: 1px solid black;
-        margin-top: 10px;
+        border: 5px solid #333; }
+      body section#project_porfolio.content_section .category .web-design-thumbnail {
+        -webkit-box-shadow: 4px 4px 5px black;
+        box-shadow: 4px 4px 5px black; }
+      body section#project_porfolio.content_section .category .project .project-container {
+        background-color: #DBDDDE;
+        padding: 15px;
         float: left;
-        font-weight: bold;
-        color: black;
-        background-color: white;
-        width: 100%;
-        padding: 10px; }
-    body section#project_porfolio.content_section #websites.category {
-      background-color: #ED1C24;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      body section#project_porfolio.content_section #websites.category h4 {
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 5px gray;
+        box-shadow: 4px 4px 5px gray;
+        width: 100%; }
+        body section#project_porfolio.content_section .category .project .project-container h3 {
+          text-align: center; }
+      body section#project_porfolio.content_section .category h4 {
         color: white;
-        font-weight: bold;
         font-size: 32px;
         padding-left: 15px;
         padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #websites.category h3 {
-        border: 1px solid black;
-        margin-top: 10px;
-        float: left;
-        font-weight: bold;
-        color: black;
-        background-color: white;
-        width: 100%;
-        padding: 10px; }
-    body section#project_porfolio.content_section #informational.category {
-      background-color: #7e1ca1;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      body section#project_porfolio.content_section #informational.category h4 {
-        color: white;
-        font-weight: bold;
-        font-size: 32px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #informational.category h3 {
-        border: 1px solid black;
-        margin-top: 10px;
-        float: left;
-        font-weight: bold;
-        color: black;
-        background-color: white;
-        width: 100%;
-        padding: 10px; }
-    body section#project_porfolio.content_section #applications.category {
-      background-color: #f96806;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      body section#project_porfolio.content_section #applications.category h4 {
-        color: white;
-        font-weight: bold;
-        font-size: 32px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #applications.category h3 {
-        border: 1px solid black;
-        margin-top: 10px;
-        float: left;
-        font-weight: bold;
-        color: black;
-        background-color: white;
-        width: 100%;
-        padding: 10px; }
-    body section#project_porfolio.content_section #games.category {
-      background-color: #eaf906;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      body section#project_porfolio.content_section #games.category h4 {
-        color: white;
-        font-weight: bold;
-        font-size: 32px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 3px 3px 3px black; }
-      body section#project_porfolio.content_section #games.category h3 {
-        border: 1px solid black;
+        padding-bottom: 10px; }
+      body section#project_porfolio.content_section .category h3 {
         margin-top: 10px;
         float: left;
         font-weight: bold;
@@ -391,7 +219,7 @@ body {
         width: 100%;
         padding: 10px; }
   body .main_category.contact {
-    background-color: navy;
+    background-color: #262B5E;
     float: left;
     width: 100%; }
   body .main_category.contact h1 {
@@ -400,7 +228,7 @@ body {
     margin: 10px; }
   body .contact_form {
     background-color: #fff;
-    border: 5px solid #000;
+    border: 2px solid #000;
     -moz-border-radius: 15px;
     border-radius: 15px;
     padding: 15px;
@@ -439,7 +267,7 @@ body {
     width: auto;
     border-radius: 10px; }
   body .column {
-    border: 5px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
     margin: 10px; }
     body .column .column-content {
@@ -456,34 +284,27 @@ body {
       width: 100%;
       height: 100%;
       padding: 10px; }
+    body .column img {
+      border-radius: 10px; }
   body .content_section.about_us {
-    background-color: navy;
+    background-color: #262B5E;
     padding: 10px; }
     body .content_section.about_us h2 {
       font-family: 'Dancing Script', cursive;
       font-size: 40px; }
   body footer {
+    background-color: #EBEBEB;
+    border-top: 2px solid #262B5E;
+    -webkit-box-shadow: -2px -2px 2px #808080;
+    box-shadow: -2px -2px 2px #808080;
     width: 100%;
+    margin: 0;
+    z-index: 1;
     clear: both;
-    padding: 15px;
-    background: red;
-    /* For browsers that do not support gradients */
-    /* For Safari 5.1 to 6.0 */
-    background: -webkit-linear-gradient(left, red, blue, green, purple, white);
-    /* For Opera 11.1 to 12.0 */
-    background: -o-linear-gradient(left, red, blue, green, purple, white);
-    /* For Fx 3.6 to 15 */
-    background: -moz-linear-gradient(left, red, blue, green, purple, white);
-    /* Standard syntax */
-    background: -webkit-gradient(linear, left top, right top, from(red), color-stop(blue), color-stop(green), color-stop(purple), to(white));
-    background: linear-gradient(to right, red, blue, green, purple, white);
+    font-weight: bold;
     text-align: center;
-    border: 1px solid black;
-    color: black; }
-    body footer p {
-      background-color: white;
-      padding: 10px 0;
-      color: black; }
+    color: black;
+    padding: 50px; }
   @media screen and (min-width: 767px) {
     body .navbar-nav .nav-link {
       padding: 10px 20px;

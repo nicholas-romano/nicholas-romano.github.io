@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/tabs.js"></script>
-    <script src="js/lower-content.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/webdesigns.css" />
@@ -96,12 +95,11 @@
       .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
   </style>
     <header>
-      <h1>Stylin' Digital Designs</h1>
+      
         <div id="banner">
-
+          <h1>Nick Romano</h1>
           <!-- Navigation -->
           <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#"><img src="images/SDD-Logo.png" /></a>
             <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -144,29 +142,8 @@
             <h1>Web Design and Development</h1>
             <h5>Building outstanding websites that give your business an edge</h5>
         </section>
-        <section id="services" class="content_section">
-
-          <h3>Services We Provide</h3>
-
-            <div class="services_left_column col-md-6">
-              <img class="services_icons img-fluid" src="images/icons/services_support.png" alt="24/7 Support">
-              <img class="services_icons img-fluid" src="images/icons/services_custom_web.png" alt="Custom Web Designs">
-              <img class="services_icons img-fluid" src="images/icons/services_api_integration.png" alt="API Integration">
-              <img class="services_icons img-fluid" src="images/icons/services_SSL_encryption.png" alt="SSL Encryption">
-            </div>
-
-
-            <div class="services_right_column col-md-6">
-              <img class="services_icons img-fluid" src="images/icons/services_responsive_design.png" alt="Responsive Design">
-              <img class="services_icons img-fluid" src="images/icons/services_shopping_carts.png" alt="Shopping Carts">
-              <img class="services_icons img-fluid" src="images/icons/services_payment_processing.png" alt="Payment Processing">
-              <img class="services_icons img-fluid" src="images/icons/services_quality_assurance.png" alt="Quality Assurance">
-            </div>
-
-        </section>
         <section id="expect_from_us" class="content_section">
             <h3>What You Can Expect</h3>
-            <h5>Stylin Digital Designs websites are:</h5>
             <div class="row">
               <div class="col-md-4 col-sm-6">
                   <div id="appealing" class="content_container">
@@ -213,7 +190,7 @@
                   <h4>Interactive</h4>
                   <ul>
                     <li>Custom HTML5 &amp; CSS3 Designs</li>
-                    <li>Dynamic JavaScript Programming using ReactJS and Angular</li>
+                    <li>Dynamic JavaScript Programming using ReactJS, NodeJS, and ExpressJS</li>
                     <li>Bootstrap Responsive Design Techniques</li>
                     <li>PHP and MySQL Back-End Scripting</li>
                   </ul>
@@ -240,345 +217,354 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 project">
-                <a href="https://nicholas-romano.github.io/News-Photos/" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/News-Photos_thumbnail.png" alt="News and Photos Application">
-                  <h3>News and Photos</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="news-photos" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="news-photos-description" onclick="changeTabs('news-photos', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="news-photos-technologies" data-toggle="tab" onclick="changeTabs('news-photos', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="news-photos-software" data-toggle="tab" onclick="changeTabs('news-photos', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="news-photos-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="news-photos-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>I developed this application with a team of two other developers. It is a web application that allows the user to search for News and Places based on search criteria,
-                        gives the user the ability to view more photos and add the place or news story to their favorites list. I developed the Google Places API 
-                        functionality which uses a search form that includes search criteria such as keyword, place name, location, type, and search radius. I also developed the view more 
-                        photos pop-over, and the add to favorites button functionality. Another group member developed the News API form functionality which searches for news articles based on 
-                        keywords, and the another group member designed the site using the Materialize CSS framework.
-                      </p>
+                <div class="project-container">
+                  <a href="News-Photos/" target="_blank">
+                    <img class="img-fluid" src="images/project_thumbnails/News-Photos_thumbnail.png" alt="News and Photos Application">
+                    <h3>News and Photos</h3>
+                    <ul class="nav nav-tabs col-sm-12" id="news-photos" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="news-photos-description" onclick="changeTabs('news-photos', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="news-photos-technologies" data-toggle="tab" onclick="changeTabs('news-photos', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="news-photos-software" data-toggle="tab" onclick="changeTabs('news-photos', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="news-photos-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="news-photos-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>I developed this application with a team of two other developers. It is a web application that allows the user to search for News and Places based on search criteria,
+                          gives the user the ability to view more photos and add the place or news story to their favorites list. I developed the Google Places API 
+                          functionality which uses a search form that includes search criteria such as keyword, place name, location, type, and search radius. I also developed the view more 
+                          photos pop-over, and the add to favorites button functionality. Another group member developed the News API form functionality which searches for news articles based on 
+                          keywords, and the another group member designed the site using the Materialize CSS framework.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="news-photos-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/materialize-logo.png" width="70" alt="Bootstrap logo"><br>Materialize
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="news-photos-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="news-photos-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/materialize-logo.png" width="70" alt="Bootstrap logo"><br>Materialize
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="news-photos-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->  
               <div class="col-md-4 col-sm-6 project">
-                <a href="https://nicholas-romano.github.io/Weather-Dashboard/" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Weather-Dashboard_thumbnail.png" alt="Weather Dashboard Application">
-                  <h3>Weather Dashboard</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="weather-dashboard" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="weather-dashboard-description" onclick="changeTabs('weather-dashboard', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="weather-dashboard-technologies" data-toggle="tab" onclick="changeTabs('weather-dashboard', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="weather-dashboard-software" data-toggle="tab" onclick="changeTabs('weather-dashboard', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="weather-dashboard-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="weather-dashboard-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>This web application uses the Open Weather Map API and gives the user the ability to find the local forecast of any city, state, or country.
-                        When the user enter a location and clicks the search button, they are given the current weather forecast including the temperature, humidity,
-                        wind speed, and uv index which is color coded based on severity, and a five-day weather forecast for the next five days. 
-                        The weather is indicated by an icon image depicting the type of precipitation. For instance, a sun is displayed for a sunny forecast, clouds 
-                        for cloudy, rain clouds for rain, etc. The Moment JS framework was used to loop through the five day forecast.
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="weather-dashboard-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                  <div class="project-container">
+                    <a href="Weather-Dashboard/" target="_blank">
+                      <img class="img-fluid" src="images/project_thumbnails/Weather-Dashboard_thumbnail.png" alt="Weather Dashboard Application">
+                      <h3>Weather Dashboard</h3>
+                      <ul class="nav nav-tabs col-sm-12" id="weather-dashboard" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="weather-dashboard-description" onclick="changeTabs('weather-dashboard', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="weather-dashboard-technologies" data-toggle="tab" onclick="changeTabs('weather-dashboard', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="weather-dashboard-software" data-toggle="tab" onclick="changeTabs('weather-dashboard', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                        </li>
+                      </ul>
+                      <div id="weather-dashboard-content" class="tab-content project-description">
+                        <div class="tab-pane fade show active" id="weather-dashboard-description-content" role="tabpanel" aria-labelledby="description-tab">
+                          <h5>Description:</h5>
+                          <p>This web application uses the Open Weather Map API and gives the user the ability to find the local forecast of any city, state, or country.
+                            When the user enter a location and clicks the search button, they are given the current weather forecast including the temperature, humidity,
+                            wind speed, and uv index which is color coded based on severity, and a five-day weather forecast for the next five days. 
+                            The weather is indicated by an icon image depicting the type of precipitation. For instance, a sun is displayed for a sunny forecast, clouds 
+                            for cloudy, rain clouds for rain, etc. The Moment JS framework was used to loop through the five day forecast.
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="weather-dashboard-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                          <h5>Technologies Used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/momentjs-logo.png" width="70" alt="Moment JS logo"><br>Moment JS
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="weather-dashboard-software-content" role="tabpanel" aria-labelledby="software-tab">
+                          <h5>Software used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                          </div>
+                        </div>
                       </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/momentjs-logo.png" width="70" alt="Moment JS logo"><br>Moment JS
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="weather-dashboard-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                    </a>
+                  </div><!--end project-container -->
+              </div><!--end project-->
               <div class="col-md-4 col-sm-6 project">
-                <a href="https://nicholas-romano.github.io/Work-Day-Scheduler/" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Work-Day-Scheduler_thumbnail.png" alt="Work Day Scheduler Application">
-                  <h3>Work Day Scheduler</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="work-day-scheduler-dashboard" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="work-day-scheduler-description" onclick="changeTabs('work-day-scheduler', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="work-day-scheduler-technologies" data-toggle="tab" onclick="changeTabs('work-day-scheduler', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="work-day-scheduler-software" data-toggle="tab" onclick="changeTabs('work-day-scheduler', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="work-day-scheduler-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="work-day-scheduler-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>This is a very useful application for those who like to plan-out their day. This application gives the user the ability to enter in pointer-events 
-                        for each hour of the workday from 8am to 6pm. The current time is calculated using the moment.js javascript framework. The current hour block is highlighted yellow, while the past time blocks are gray, and the future time 
-                        blocks are green. Only the green future time blocks are editable. The user enters in an event for inside a green timeblock and hits the save button 
-                        on the rightside of the table. The event is then saved to the user's brower local storage array.
-                      </p>
+                <div class="project-container">
+                  <a href="Work-Day-Scheduler/" target="_blank">
+                    <img class="img-fluid" src="images/project_thumbnails/Work-Day-Scheduler_thumbnail.png" alt="Work Day Scheduler Application">
+                    <h3>Work Day Scheduler</h3>
+                    <ul class="nav nav-tabs col-sm-12" id="work-day-scheduler-dashboard" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="work-day-scheduler-description" onclick="changeTabs('work-day-scheduler', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="work-day-scheduler-technologies" data-toggle="tab" onclick="changeTabs('work-day-scheduler', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="work-day-scheduler-software" data-toggle="tab" onclick="changeTabs('work-day-scheduler', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="work-day-scheduler-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="work-day-scheduler-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This is a very useful application for those who like to plan-out their day. This application gives the user the ability to enter in pointer-events 
+                          for each hour of the workday from 8am to 6pm. The current time is calculated using the moment.js javascript framework. The current hour block is highlighted yellow, while the past time blocks are gray, and the future time 
+                          blocks are green. Only the green future time blocks are editable. The user enters in an event for inside a green timeblock and hits the save button 
+                          on the rightside of the table. The event is then saved to the user's brower local storage array.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="work-day-scheduler-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/momentjs-logo.png" width="70" alt="Moment JS logo"><br>Moment JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="work-day-scheduler-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="work-day-scheduler-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/momentjs-logo.png" width="70" alt="Moment JS logo"><br>Moment JS
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="work-day-scheduler-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
               <div class="col-md-4 col-sm-6 project">
-                <a href="https://nicholas-romano.github.io/Code-Quiz/" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Code-Quiz_thumbnail.png" alt="Code Quiz Application">
-                  <h3>Code Quiz</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="code-quiz" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="code-quiz-description" onclick="changeTabs('code-quiz', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="code-quiz-technologies" data-toggle="tab" onclick="changeTabs('code-quiz', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="code-quiz-software" data-toggle="tab" onclick="changeTabs('code-quiz', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="code-quiz-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="code-quiz-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>This application is an interactive JavaScript Quiz Assessment which tests the user's JavaScript knowledge. The application is meant to have just a six question sample
-                        and it works by recording the user's right or wrong answers. The quiz is on a timer and the total time left when the quiz is complete will be the user's 
-                        score. The quiz starts counting down from 75 and for every answer the user gets incorrect, 15 seconds are subtracted from the total time. 
-                        For every answer the user gets correct, the count-down clock is uneffected. At the end of the quiz, the user can enter and submit their initials for the application
-                        to save their score inside a high-scores table containing scores saved in the browser's local storage. All of the scores are ranked
-                        from highest score to lowest score.
-                      </p>
+                <div class="project-container">
+                  <a href="Code-Quiz/" target="_blank">
+                    <img class="img-fluid" src="images/project_thumbnails/Code-Quiz_thumbnail.png" alt="Code Quiz Application">
+                    <h3>Code Quiz</h3>
+                    <ul class="nav nav-tabs col-sm-12" id="code-quiz" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="code-quiz-description" onclick="changeTabs('code-quiz', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="code-quiz-technologies" data-toggle="tab" onclick="changeTabs('code-quiz', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="code-quiz-software" data-toggle="tab" onclick="changeTabs('code-quiz', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="code-quiz-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="code-quiz-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This application is an interactive JavaScript Quiz Assessment which tests the user's JavaScript knowledge. The application is meant to have just a six question sample
+                          and it works by recording the user's right or wrong answers. The quiz is on a timer and the total time left when the quiz is complete will be the user's 
+                          score. The quiz starts counting down from 75 and for every answer the user gets incorrect, 15 seconds are subtracted from the total time. 
+                          For every answer the user gets correct, the count-down clock is uneffected. At the end of the quiz, the user can enter and submit their initials for the application
+                          to save their score inside a high-scores table containing scores saved in the browser's local storage. All of the scores are ranked
+                          from highest score to lowest score.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="code-quiz-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="code-quiz-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                        </div> 
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="code-quiz-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="code-quiz-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
-                      </div> 
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
               <div class="col-md-4 col-sm-6 project">
-                <a href="https://nicholas-romano.github.io/Password-Generator/" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Password-Generator_thumbnail.png" alt="Password Generator Application">
-                  <h3>Password Generator</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="password-generator" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="password-generator-description" onclick="changeTabs('password-generator', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="password-generator-technologies" data-toggle="tab" onclick="changeTabs('password-generator', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="password-generator-software" data-toggle="tab" onclick="changeTabs('password-generator', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="password-generator-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="password-generator-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>This application utilizes the browser's window prompt function to accept user input and generate a password. The prompt sequence goes 
-                        as followers: character length (minimum 8, maximum 128), special characters, numbers, uppercase letters, and lowercase letters. The user must respond with a valid 
-                        number for character length, and respond 'y' for 'yes' to at least one of the last four criteria. After a password is generated, a copy button is 
-                        displayed below it. When the user clicks the copy button, the password is automatically copied to the user's computer clipboard so they can paste it
-                        elsewhere.
-                      </p>
+                <div class="project-container">
+                  <a href="Password-Generator/" target="_blank">
+                    <img class="img-fluid" src="images/project_thumbnails/Password-Generator_thumbnail.png" alt="Password Generator Application">
+                    <h3>Password Generator</h3>
+                    <ul class="nav nav-tabs col-sm-12" id="password-generator" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="password-generator-description" onclick="changeTabs('password-generator', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="password-generator-technologies" data-toggle="tab" onclick="changeTabs('password-generator', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="password-generator-software" data-toggle="tab" onclick="changeTabs('password-generator', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="password-generator-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="password-generator-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This application utilizes the browser's window prompt function to accept user input and generate a password. The prompt sequence goes 
+                          as followers: character length (minimum 8, maximum 128), special characters, numbers, uppercase letters, and lowercase letters. The user must respond with a valid 
+                          number for character length, and respond 'y' for 'yes' to at least one of the last four criteria. After a password is generated, a copy button is 
+                          displayed below it. When the user clicks the copy button, the password is automatically copied to the user's computer clipboard so they can paste it
+                          elsewhere.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="password-generator-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="password-generator-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="password-generator-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="password-generator-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
               <div class="col-md-4 col-sm-6 project">
-                <a href="shoppers-stop/index.html" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/shoppers-stop-thumbnail.png" alt="Shoppers Stop Application">
-                  <h3>Shoppers Stop</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project6" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project6-description" onclick="changeTabs('project6', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project6-technologies" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project6-software" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project6-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project6-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>This was an application I made that gives people a platform to make a shopping list and track their grocery expenses.
-                        Features include the ability to set a total funds amount, add items to the list, and add details to each item
-                        using an HTML5 range slider. Details include an items cost, calorie count, and weight. There is also a section
-                        on the right that calculates total cost, calories, and weight for all groceries purchased.
-                      </p>
+                <div class="project-container">
+                  <a href="shoppers-stop/index.html" target="_blank">
+                    <img class="img-fluid" src="images/project_thumbnails/shoppers-stop-thumbnail.png" alt="Shoppers Stop Application">
+                    <h3>Shoppers Stop</h3>
+                    <ul class="nav nav-tabs col-sm-12" id="project6" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="project6-description" onclick="changeTabs('project6', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="project6-technologies" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="project6-software" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="project6-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="project6-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This was an application I made that gives people a platform to make a shopping list and track their grocery expenses.
+                          Features include the ability to set a total funds amount, add items to the list, and add details to each item
+                          using an HTML5 range slider. Details include an items cost, calorie count, and weight. There is also a section
+                          on the right that calculates total cost, calories, and weight for all groceries purchased.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="project5-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/react-js-logo.png" width="70" alt="React JS logo"><br>React JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/redux-logo.png" width="70" alt="Redux logo"><br>Redux
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="project5-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="project5-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/react-js-logo.png" width="70" alt="React JS logo"><br>React JS
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/redux-logo.png" width="70" alt="Redux logo"><br>Redux
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project5-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 project">
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
+              <div class="col-md-4 col-sm-6 project">
+                <div class="project-container">
                     <a href="stop-watch/" target="_blank">
                       <img class="img-fluid" src="images/project_thumbnails/stop-watch-thumbnail.png" alt="Stop Watch Application" >
                       <h3>Stop Watch</h3>
@@ -631,8 +617,10 @@
                         </div>
                       </div>
                     </a>
-                </div>
-                <div class="col-md-4 col-sm-6 project">
+                </div><!--end project-container -->
+              </div><!--end project-->
+              <div class="col-md-4 col-sm-6 project">
+                <div class="project-container">
                   <a href="movie-discovery/" target="_blank">
                     <img class="img-fluid" src="images/project_thumbnails/movies-app_thumbnail.png" alt="Movies Search Application" >
                     <h3>Movie Discovery</h3>
@@ -691,457 +679,634 @@
                       </div>
                     </div>
                   </div>
-                </div>
-            </div>
-          </div>
+                </div><!--end project-container -->
+              </div><!--end project-->
+            </div><!-- end row -->
+          </div><!--end Web Applications container-->
           <div id="webpage-designs" class="category">
             <div class="row">
-              <h4>Webpage Designs</h4>
+                <h4>Webpage Designs</h4>
             </div>
-            <div class="row">
-              <div class="col-sm-12 project">
-
-                <div class="demo-gallery">
+            <div class="row">  
+                <div class="col-sm-12 project">
+                  <div class="project-container">
+                    <div class="demo-gallery">
                       <ul id="photo-gallery" class="list-unstyled row">
-                        <li class="col-sm-6 col-md-3 col-lg-2"
-                            data-responsive="webpage_design_gallery/IEM-375.png 375,
-                                             webpage_design_gallery/IEM-480.png 480,
-                                             webpage_design_gallery/IEM-800.png 800"
-                            data-src="webpage_design_gallery/IEM-1600.png"
-                            data-sub-html="<h4>IEM Home Page</h4>
-                                           <p>IEM is a company focused on government agencies and private sector organizations around the world
-                                           to improve disaster preparedness, response recovery, and strengthen homeland security defense.</p>
-                                           ">
-                            <a href="">
-                                <img class="img-responsive" src="webpage_design_gallery/IEM-thumb-348.png">
-                            </a>
-                        </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Atlantim-375.png 375,
-                                               webpage_design_gallery/Atlantim-480.png 480,
-                                               webpage_design_gallery/Atlantim-800.png 800"
-                              data-src="webpage_design_gallery/Atlantim-1600.png"
-                              data-sub-html="<h4>Atlantim Home Page</h4>
-                                             <p>This is a Spain-based job posting website that gives users the ability to post a job or search for employment.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Atlantim-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Atlantim-slide-out-menu-375.png 375,
-                                               webpage_design_gallery/Atlantim-slide-out-menu-480.png 480,
-                                               webpage_design_gallery/Atlantim-slide-out-menu-800.png 800"
-                              data-src="webpage_design_gallery/Atlantim-slide-out-menu-1600.png"
-                              data-sub-html="<h4>Atlantim Slide-out Menu</h4>
-                                             <p>The slide-out menu displays when the user clicks on the top right menu button in the top navigation bar.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Atlantim-slide-out-menu-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="Atlantim-Services-375.png 375,
-                                               webpage_design_gallery/Atlantim-Services-480.png 480,
-                                               webpage_design_gallery/Atlantim-Services-800.png 800"
-                              data-src="webpage_design_gallery/Atlantim-Services-1600.png"
-                              data-sub-html="<h4>Atlantim Services Page</h4>
-                                             <p>This is the search page for services that have been posted.
-                                               The search results can be refined on the left based on keyword, location, rate, and category.</p>
-                                               ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Atlantim-Services-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Live-Famously-375.png 375,
-                                               webpage_design_gallery/Live-Famously-480.png 480,
-                                               webpage_design_gallery/Live-Famously-800.png 800"
-                              data-src="webpage_design_gallery/Live-Famously-1600.png"
-                              data-sub-html="<h4>Live Famously Home Page</h4>
-                                             <p>This is a website for a product design business focused on women's clothing, jewlery, and accessories.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Live-Famously-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Live-Famously-About-Us-375.png 375,
-                                               webpage_design_gallery/Live-Famously-About-Us-480.png 480,
-                                               webpage_design_gallery/Live-Famously-About-Us-800.png 800"
-                              data-src="webpage_design_gallery/Live-Famously-About-Us-1600.png"
-                              data-sub-html="<h4>Live Famously About Us Page</h4>
-                                             <p>This page provides background information about the company.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Live-Famously-About-Us-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/eDocs-Contract-Search-375.png 375,
-                                               webpage_design_gallery/eDocs-Contract-Search-480.png 480,
-                                               webpage_design_gallery/eDocs-Contract-Search-800.png 800"
-                              data-src="webpage_design_gallery/eDocs-Contract-Search-1600.png"
-                              data-sub-html="<h4>eDocs Contract Search Page</h4>
-                                             <p>This page give the user the ability to search for contracts based on custom search criteria.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/eDocs-Contract-Search-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/eDocs-Contract-Document-Listing-375.png 375,
-                                               webpage_design_gallery/eDocs-Contract-Document-Listing-480.png 480,
-                                               webpage_design_gallery/eDocs-Contract-Document-Listing-800.png 800"
-                              data-src="webpage_design_gallery/eDocs-Contract-Document-Listing-1600.png"
-                              data-sub-html="<h4>eDocs EDSS Document Listing</h4>
-                                             <p>This page provides detailed information about a specific contract,
-                                               action buttons to edit the data, and comment section at the bottom.</p>
-                                               ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/eDocs-Contract-Document-Listing-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Rental-Moving-Boxes-375.png 375,
-                                               webpage_design_gallery/Rental-Moving-Boxes-480.png 480,
-                                               webpage_design_gallery/Rental-Moving-Boxes-800.png 800"
-                              data-src="webpage_design_gallery/Rental-Moving-Boxes-1600.png"
-                              data-sub-html="<h4>Rental Moving Boxes Home Page</h4>
-                                             <p>This website provides reusable plastic moving boxes that users can rent to help them move.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Rental-Moving-Boxes-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Othram-Discover-Landing-Page-375.png 375,
-                                               webpage_design_gallery/Othram-Discover-Landing-Page-480.png 480,
-                                               webpage_design_gallery/Othram-Discover-Landing-Page-800.png 800"
-                              data-src="webpage_design_gallery/Othram-Discover-Landing-Page-1600.png"
-                              data-sub-html="<h4>Othram Landing Page</h4>
-                                             <p>The purpose of this website is to utilize forensics and advanced technology to help solve crimes.</p>">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Othram-Discover-Landing-Page-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Othram-Identity-Details-375.png 375,
-                                               webpage_design_gallery/Othram-Identity-Details-480.png 480,
-                                               webpage_design_gallery/Othram-Identity-Details-800.png 800"
-                              data-src="webpage_design_gallery/Othram-Identity-Details-1600.png"
-                              data-sub-html="<h4>Othram Identity Details Page</h4>
-                                            <p>This page displays a user's profile along with a file submission section, and a reports section.</p>
-                                            ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Othram-Identity-Details-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-375.png 375,
-                                               webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-480.png 480,
-                                               webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-800.png 800"
-                              data-src="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-1600.png"
-                              data-sub-html="<h4>Othram Haplogroup Report Page</h4>
-                                             <p>This page displays detailed information about a user's ancentry
-                                             in regards to their past ethnic origins and and geographic roots.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Cruneo-Home-375.png 375,
-                                               webpage_design_gallery/Cruneo-Home-480.png 480,
-                                               webpage_design_gallery/Cruneo-Home-800.png 800"
-                              data-src="webpage_design_gallery/Cruneo-Home-1600.png"
-                              data-sub-html="<h4>Cruneo Home page</h4>
-                                            <p>This is a German-based travel website that provides the user a
-                                              trip itinerary form where they can enter in all of their details.</p>
-                                            ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Cruneo-Home-thumb-348.png">
-                              </a>
-                          </li>
-                          <li class="col-sm-6 col-md-3 col-lg-2"
-                              data-responsive="webpage_design_gallery/Cruneo-Form-375.png 375,
-                                               webpage_design_gallery/Cruneo-Form-480.png 480,
-                                               webpage_design_gallery/Cruneo-Form-800.png 800"
-                              data-src="webpage_design_gallery/Cruneo-Form-1600.png"
-                              data-sub-html="<h4>Cruneo Travel Itinerary Form</h4>
-                                             <p>This is the user's travel itinerary form where the user can submit
-                                               their information and upload documents.</p>
-                                             ">
-                              <a href="">
-                                  <img class="img-responsive" src="webpage_design_gallery/Cruneo-Form-thumb-348.png">
-                              </a>
-                          </li>
+                            <li class="col-sm-6 col-md-3 col-lg-2"
+                                data-responsive="webpage_design_gallery/IEM-375.png 375,
+                                                webpage_design_gallery/IEM-480.png 480,
+                                                webpage_design_gallery/IEM-800.png 800"
+                                data-src="webpage_design_gallery/IEM-1600.png"
+                                data-sub-html="<h4>IEM Home Page</h4>
+                                              <p>IEM is a company focused on government agencies and private sector organizations around the world
+                                              to improve disaster preparedness, response recovery, and strengthen homeland security defense.</p>
+                                              ">
+                                <a href="" class="web-design-thumbnail">
+                                    <img class="img-responsive" src="webpage_design_gallery/IEM-thumb-348.png">
+                                </a>
+                            </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Atlantim-375.png 375,
+                                                  webpage_design_gallery/Atlantim-480.png 480,
+                                                  webpage_design_gallery/Atlantim-800.png 800"
+                                  data-src="webpage_design_gallery/Atlantim-1600.png"
+                                  data-sub-html="<h4>Atlantim Home Page</h4>
+                                                <p>This is a Spain-based job posting website that gives users the ability to post a job or search for employment.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Atlantim-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Atlantim-slide-out-menu-375.png 375,
+                                                  webpage_design_gallery/Atlantim-slide-out-menu-480.png 480,
+                                                  webpage_design_gallery/Atlantim-slide-out-menu-800.png 800"
+                                  data-src="webpage_design_gallery/Atlantim-slide-out-menu-1600.png"
+                                  data-sub-html="<h4>Atlantim Slide-out Menu</h4>
+                                                <p>The slide-out menu displays when the user clicks on the top right menu button in the top navigation bar.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Atlantim-slide-out-menu-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="Atlantim-Services-375.png 375,
+                                                  webpage_design_gallery/Atlantim-Services-480.png 480,
+                                                  webpage_design_gallery/Atlantim-Services-800.png 800"
+                                  data-src="webpage_design_gallery/Atlantim-Services-1600.png"
+                                  data-sub-html="<h4>Atlantim Services Page</h4>
+                                                <p>This is the search page for services that have been posted.
+                                                  The search results can be refined on the left based on keyword, location, rate, and category.</p>
+                                                  ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Atlantim-Services-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Live-Famously-375.png 375,
+                                                  webpage_design_gallery/Live-Famously-480.png 480,
+                                                  webpage_design_gallery/Live-Famously-800.png 800"
+                                  data-src="webpage_design_gallery/Live-Famously-1600.png"
+                                  data-sub-html="<h4>Live Famously Home Page</h4>
+                                                <p>This is a website for a product design business focused on women's clothing, jewlery, and accessories.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Live-Famously-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Live-Famously-About-Us-375.png 375,
+                                                  webpage_design_gallery/Live-Famously-About-Us-480.png 480,
+                                                  webpage_design_gallery/Live-Famously-About-Us-800.png 800"
+                                  data-src="webpage_design_gallery/Live-Famously-About-Us-1600.png"
+                                  data-sub-html="<h4>Live Famously About Us Page</h4>
+                                                <p>This page provides background information about the company.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Live-Famously-About-Us-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/eDocs-Contract-Search-375.png 375,
+                                                  webpage_design_gallery/eDocs-Contract-Search-480.png 480,
+                                                  webpage_design_gallery/eDocs-Contract-Search-800.png 800"
+                                  data-src="webpage_design_gallery/eDocs-Contract-Search-1600.png"
+                                  data-sub-html="<h4>eDocs Contract Search Page</h4>
+                                                <p>This page give the user the ability to search for contracts based on custom search criteria.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/eDocs-Contract-Search-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/eDocs-Contract-Document-Listing-375.png 375,
+                                                  webpage_design_gallery/eDocs-Contract-Document-Listing-480.png 480,
+                                                  webpage_design_gallery/eDocs-Contract-Document-Listing-800.png 800"
+                                  data-src="webpage_design_gallery/eDocs-Contract-Document-Listing-1600.png"
+                                  data-sub-html="<h4>eDocs EDSS Document Listing</h4>
+                                                <p>This page provides detailed information about a specific contract,
+                                                  action buttons to edit the data, and comment section at the bottom.</p>
+                                                  ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/eDocs-Contract-Document-Listing-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Rental-Moving-Boxes-375.png 375,
+                                                  webpage_design_gallery/Rental-Moving-Boxes-480.png 480,
+                                                  webpage_design_gallery/Rental-Moving-Boxes-800.png 800"
+                                  data-src="webpage_design_gallery/Rental-Moving-Boxes-1600.png"
+                                  data-sub-html="<h4>Rental Moving Boxes Home Page</h4>
+                                                <p>This website provides reusable plastic moving boxes that users can rent to help them move.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Rental-Moving-Boxes-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Othram-Discover-Landing-Page-375.png 375,
+                                                  webpage_design_gallery/Othram-Discover-Landing-Page-480.png 480,
+                                                  webpage_design_gallery/Othram-Discover-Landing-Page-800.png 800"
+                                  data-src="webpage_design_gallery/Othram-Discover-Landing-Page-1600.png"
+                                  data-sub-html="<h4>Othram Landing Page</h4>
+                                                <p>The purpose of this website is to utilize forensics and advanced technology to help solve crimes.</p>">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Othram-Discover-Landing-Page-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Othram-Identity-Details-375.png 375,
+                                                  webpage_design_gallery/Othram-Identity-Details-480.png 480,
+                                                  webpage_design_gallery/Othram-Identity-Details-800.png 800"
+                                  data-src="webpage_design_gallery/Othram-Identity-Details-1600.png"
+                                  data-sub-html="<h4>Othram Identity Details Page</h4>
+                                                <p>This page displays a user's profile along with a file submission section, and a reports section.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Othram-Identity-Details-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-375.png 375,
+                                                  webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-480.png 480,
+                                                  webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-800.png 800"
+                                  data-src="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-1600.png"
+                                  data-sub-html="<h4>Othram Haplogroup Report Page</h4>
+                                                <p>This page displays detailed information about a user's ancentry
+                                                in regards to their past ethnic origins and and geographic roots.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Othram-Discover-Haplogroup-Report-Page-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Cruneo-Home-375.png 375,
+                                                  webpage_design_gallery/Cruneo-Home-480.png 480,
+                                                  webpage_design_gallery/Cruneo-Home-800.png 800"
+                                  data-src="webpage_design_gallery/Cruneo-Home-1600.png"
+                                  data-sub-html="<h4>Cruneo Home page</h4>
+                                                <p>This is a German-based travel website that provides the user a
+                                                  trip itinerary form where they can enter in all of their details.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Cruneo-Home-thumb-348.png">
+                                  </a>
+                              </li>
+                              <li class="col-sm-6 col-md-3 col-lg-2"
+                                  data-responsive="webpage_design_gallery/Cruneo-Form-375.png 375,
+                                                  webpage_design_gallery/Cruneo-Form-480.png 480,
+                                                  webpage_design_gallery/Cruneo-Form-800.png 800"
+                                  data-src="webpage_design_gallery/Cruneo-Form-1600.png"
+                                  data-sub-html="<h4>Cruneo Travel Itinerary Form</h4>
+                                                <p>This is the user's travel itinerary form where the user can submit
+                                                  their information and upload documents.</p>
+                                                ">
+                                  <a href="" class="web-design-thumbnail">
+                                      <img class="img-responsive" src="webpage_design_gallery/Cruneo-Form-thumb-348.png">
+                                  </a>
+                              </li>
                       </ul>
-                  </div>
-
-              </div>
-            </div>
-          </div>
-          </div>
-            <div id="mobile-app-design" class="category">
+                    </div>
+                  </div><!-- end project-container -->
+                </div><!-- end project -->
+            </div><!-- end row -->
+          </div><!-- end Webpage Designs container-->
+          <div id="mobile-app-design" class="category">
               <div class="row">
                 <h4>Mobile Application Designs</h4>
               </div>
               <div class="row">
                 <div class="col-sm-12 project">
-                  <div id="screenshots">
-                      <h5 style="width: 250px; margin: 10px auto;">View Prototype: <a href="https://xd.adobe.com/spec/94494326-4885-46f3-44af-11ea120c8685-e278/" target="_blank" style="text-decoration: underline; color: blue">Bird Finder</a></h5>
-                    <div id="jssor_1" style="padding-bottom: 10px; position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:512px;overflow:hidden;visibility:hidden;">
-                        <!-- Loading Screen -->
-                        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/image-carousel/spin.svg" />
-                        </div>
-                        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:490px;overflow:hidden;">
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Splash.png" />
+                  <div class="project-container">
+                    <h3>Bird Finder</h3>
+                    <div id="screenshots">
+                        <h5 style="width: 250px; margin: 10px auto;">View Prototype: <a href="https://xd.adobe.com/spec/94494326-4885-46f3-44af-11ea120c8685-e278/" target="_blank" style="text-decoration: underline; color: blue">Bird Finder</a></h5>
+                      <div id="jssor_1" style="padding-bottom: 10px; position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:512px;overflow:hidden;visibility:hidden;">
+                          <!-- Loading Screen -->
+                          <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                              <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/image-carousel/spin.svg" />
+                          </div>
+                          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:490px;overflow:hidden;">
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Splash.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Login.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Dashboard-list-view.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Dashboard-grid-view.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Find-A-Bird.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Favorites.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Description.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Appearance.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Habitat.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Habitat-Map.png" />
+                              </div>
+                              <div>
+                                  <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Behavior.png" />
+                              </div>
+                          </div>
+                          <!-- Bullet Navigator -->
+                          <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                              <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                      <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                                  </svg>
+                              </div>
+                          </div>
+                          <!-- Arrow Navigator -->
+                          <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                  <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+                              </svg>
+                          </div>
+                          <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                  <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+                              </svg>
+                          </div>
+                          
+                      </div>
+                      
+                      <ul style="max-width: 80%; position: relative; left: 10%" class="nav nav-tabs col-sm-12" id="project1" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="project1-description" onclick="changeTabs('project1', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project1-software" data-toggle="tab" onclick="changeTabs('project1', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                        </li>
+                      </ul>
+                      <div style="max-width: 80%; position: relative; left: 10%" id="project1-content" class="tab-content project-description col-sm-12">
+                          <div class="tab-pane fade show active" id="project1-description-content" role="tabpanel" aria-labelledby="description-tab">
+                            <h5>Description:</h5>
+                            <p>
+                              This is a mobile design prototype of a Bird Finder App I created. The app displays a detailed design of a mobile application idea
+                              I came up with. When the application is developed, it will allow the user to search a database for birds by name, and then read
+                              details about the bird they selected such as description of the bird, the appearance, habitat, and behavior. The application will
+                              also provide a photo gallery the user can click through, and give the user the ability to add any particular bird to their favorites list.
+                              The protoype is interactive allowing the user to click through all of the screens and was made using Adobe XD design software.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="project1-software-content" role="tabpanel" aria-labelledby="software-tab">
+                            <h5>Software used:</h5>
+                            <div class="tech-icons">
+                              <img src="images/icons/adobe-xd.png" width="70" alt="Dreamweaver logo"><br>Adobe XD
                             </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Login.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Dashboard-list-view.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Dashboard-grid-view.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Find-A-Bird.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Favorites.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Description.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Appearance.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Habitat.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Habitat-Map.png" />
-                            </div>
-                            <div>
-                                <img data-u="image" src="images/image-carousel/Bird-Finder-Details-Behavior.png" />
-                            </div>
-                        </div>
-                        <!-- Bullet Navigator -->
-                        <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                    <circle class="b" cx="8000" cy="8000" r="5000"></circle>
-                                </svg>
-                            </div>
-                        </div>
-                        <!-- Arrow Navigator -->
-                        <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
-                            </svg>
-                        </div>
-                        <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
-                            </svg>
-                        </div>
-
+                          </div>
+                        <!-- #endregion Jssor Slider End -->
+                      </div>
                     </div>
-                    <ul style="max-width: 80%; position: relative; left: 10%" class="nav nav-tabs col-sm-12" id="project1" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" id="project1-description" onclick="changeTabs('project1', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" id="project1-software" data-toggle="tab" onclick="changeTabs('project1', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                      </li>
-                    </ul>
-                  <div style="max-width: 80%; position: relative; left: 10%" id="project1-content" class="tab-content project-description col-sm-12">
-                      <div class="tab-pane fade show active" id="project1-description-content" role="tabpanel" aria-labelledby="description-tab">
-                        <h5>Description:</h5>
-                        <p>
-                          This is a mobile design prototype of a Bird Finder App I created. The app displays a detailed design of a mobile application idea
-                          I came up with. When the application is developed, it will allow the user to search a database for birds by name, and then read
-                          details about the bird they selected such as description of the bird, the appearance, habitat, and behavior. The application will
-                          also provide a photo gallery the user can click through, and give the user the ability to add any particular bird to their favorites list.
-                          The protoype is interactive allowing the user to click through all of the screens and was made using Adobe XD design software.
-                        </p>
-                      </div>
-                      <div class="tab-pane fade" id="project1-software-content" role="tabpanel" aria-labelledby="software-tab">
-                        <h5>Software used:</h5>
-                        <div class="tech-icons">
-                          <img src="images/icons/adobe-xd.png" width="70" alt="Dreamweaver logo"><br>Adobe XD
-                        </div>
-                      </div>
-                    <!-- #endregion Jssor Slider End -->
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+                  </div><!-- end project-container -->
+                </div><!-- end project -->
+              </div><!-- end row -->
+          </div><!-- end Mobile Designs container-->
           <div id="websites" class="category">
               <div class="row">
                 <h4>Websites</h4>
               </div>
               <div class="row">
+                  <div class="col-md-4 col-sm-6 project">
+                    <div class="project-container">
+                      <a href="chapel_hill_parade/index.htm" target="_blank">
+                        <img class="img-fluid" src="images/project_thumbnails/chapel_hill_holiday_parade_2018.png" alt="Chapel Hill-Carrboro Holiday Parade" >
+                        <h3>Chapel Hill-Carrboro Holiday Parade</h3>
+                        <ul class="nav nav-tabs col-sm-12" id="project2" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="project2-description" onclick="changeTabs('project2', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project2-technologies" data-toggle="tab" onclick="changeTabs('project2', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project2-software" data-toggle="tab" onclick="changeTabs('project2', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                          </li>
+                        </ul>
+                        <div id="project2-content" class="tab-content project-description">
+                          <div class="tab-pane fade show active" id="project2-description-content" role="tabpanel" aria-labelledby="description-tab">
+                            <h5>Description:</h5>
+                            <p>I was the Web Master for the Raleigh Jaycees Volunteer Organization's Chapel Hill-Carrboro Holiday Parade.
+                              I made this website responsive to various screen sizes such as mobile and tablet screens by utilizing the Bootstrap
+                              templating library grid system which shrinks/expands, shifts and moves elements on the screen to create a more pleasing
+                              and user-friendly experience. The site includes features such as a JQuery photo slideshow, and a JQuery image pop-out gallery.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="project2-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                            <h5>Technologies Used:</h5>
+                            <div class="tech-icons">
+                              <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/css3-logo.jpg" width="70" alt="CSS logo"><br>CSS3
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/Sass_logo.png" width="70" alt="SASS logo"><br>SASS
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="project2-software-content" role="tabpanel" aria-labelledby="software-tab">
+                            <h5>Software used:</h5>
+                            <div class="tech-icons">
+                              <img src="images/icons/dreamweaver-logo.png" width="70" alt="Dreamweaver logo"><br>Dreamweaver
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div><!-- end project-container -->
+                  </div><!-- end project-->
+                  <div class="col-md-4 col-sm-6 project">
+                    <div class="project-container">
+                      <a href="http://www.triranbulldogs.com" target="_blank">
+                        <img class="img-fluid" src="images/project_thumbnails/Triran-Bulldogs-thumbnail.png" alt="Triran Bulldogs" >
+                        <h3>Triran Bulldogs</h3>
+                        <ul class="nav nav-tabs col-sm-12" id="project4" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="project4-description" onclick="changeTabs('project4', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project4-technologies" data-toggle="tab" onclick="changeTabs('project4', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project4-software" data-toggle="tab" onclick="changeTabs('project4', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                          </li>
+                        </ul>
+                        <div id="project4-content" class="tab-content project-description">
+                          <div class="tab-pane fade show active" id="project4-description-content" role="tabpanel" aria-labelledby="description-tab">
+                            <h5>Description:</h5>
+                            <p>I was the Web Master for my brother's Bulldog website: Triran Bulldogs. The purpose of this site was to advertise and
+                              sell pure bred bulldog puppies. The website features a JQuery photo gallery on the home page with an mp3 file playing
+                              in the background, using an HTML5 audio format tag. The song is titled &ldquo;Puppy Love&rdquo; and it's by Paul Anka.
+                              This website was made responsive to various screen sizes such as mobile and tablet screens by utilizing the Bootstrap
+                              templating library grid system which shrinks/expands, shifts and moves elements on the screen to create a more pleasing
+                              and user-friendly experience. The site also has a webform that uses php to submit an email with a reCaptcha widget included
+                              to verify that a real person is submitting the form and not a spam bot.
+                            </p>
+                          </div>
+                          <div class="tab-pane fade" id="project4-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                            <h5>Technologies Used:</h5>
+                            <div class="tech-icons">
+                              <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/css3-logo.jpg" width="70" alt="CSS logo"><br>CSS3
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/php_logo.png" width="70" alt="PHP logo"><br>PHP
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/re-captcha-logo.png" width="70" alt="reCaptcha logo"><br>reCaptcha
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="project4-software-content" role="tabpanel" aria-labelledby="software-tab">
+                            <h5>Software used:</h5>
+                            <div class="tech-icons">
+                              <img src="images/icons/dreamweaver-logo.png" width="70" alt="Dreamweaver logo"><br>Dreamweaver
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                            </div>
+                            <div class="tech-icons">
+                              <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div><!-- end project-container -->
+                  </div><!-- end project-->
+                  <div class="col-md-4 col-sm-6 project">
+                    <div class="project-container">
+                      <a href="http://www5.fdic.gov/idasp" target="_blank">
+                        <img class="img-fluid" src="images/project_thumbnails/fdic_bank_search_thumbnail.png" alt="City Walk Pet Care" >
+                        <h3>FDIC Institution Directory Search</h3>
+                        <ul class="nav nav-tabs col-sm-12" id="project6" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="project6-description" onclick="changeTabs('project6', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project6-technologies" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="project6-software" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                          </li>
+                        </ul>
+                        <div id="project6-content" class="tab-content project-description">
+                            <div class="tab-pane fade show active" id="project6-description-content" role="tabpanel" aria-labelledby="description-tab">
+                              <h5>Description:</h5>
+                              <p>
+                                This is a search application for the Federal Deposit Insurance Corporation (FDIC) used to search
+                                FDIC insured banks in the United States. The application uses two sets of panels that are
+                                horizontal and vertical. Each horizontal panel has a subset of vertical panels that allow
+                                the user to search for specific criteria about banks such as identification number, name, location,
+                                establishment dates, assets, and status.
+                              </p>
+                            </div>
+                            <div class="tab-pane fade" id="project6-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                              <h5>Technologies Used:</h5>
+                              <div class="tech-icons">
+                                <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                              </div>
+                              <div class="tech-icons">
+                                <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                              </div>
+                              <div class="tech-icons">
+                                <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                              </div>
+                              <div class="tech-icons">
+                                <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                              </div>
+                              <div class="tech-icons">
+                                <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="project6-software-content" role="tabpanel" aria-labelledby="software-tab">
+                              <h5>Software used:</h5>
+                              <div class="tech-icons">
+                                <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
+                              </div>
+                            </div>
+                        </div>
+                      </a>
+                    </div><!-- end project-container -->
+                  </div><!-- end project-->
+              </div><!-- end row -->
+          </div><!-- end Websites-->   
+          <div id="games" class="category">
+            <div class="row">
+              <h4>Games</h4>
+            </div>
+            <div class="row">
                 <div class="col-md-4 col-sm-6 project">
-                  <a href="chapel_hill_parade/index.htm" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/chapel_hill_holiday_parade_2018.png" alt="Chapel Hill-Carrboro Holiday Parade" >
-                  <h3>Chapel Hill-Carrboro Holiday Parade</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project2" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project2-description" onclick="changeTabs('project2', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project2-technologies" data-toggle="tab" onclick="changeTabs('project2', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project2-software" data-toggle="tab" onclick="changeTabs('project2', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project2-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project2-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>I was the Web Master for the Raleigh Jaycees Volunteer Organization's Chapel Hill-Carrboro Holiday Parade.
-                        I made this website responsive to various screen sizes such as mobile and tablet screens by utilizing the Bootstrap
-                        templating library grid system which shrinks/expands, shifts and moves elements on the screen to create a more pleasing
-                        and user-friendly experience. The site includes features such as a JQuery photo slideshow, and a JQuery image pop-out gallery.
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="project2-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/Sass_logo.png" width="70" alt="SASS logo"><br>SASS
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project2-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/dreamweaver-logo.png" width="70" alt="Dreamweaver logo"><br>Dreamweaver
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-              </div>
-              <div class="col-md-4 col-sm-6 project">
-                  <a href="http://www.triranbulldogs.com" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Triran-Bulldogs-thumbnail.png" alt="Triran Bulldogs" >
-                  <h3>Triran Bulldogs</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project4" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project4-description" onclick="changeTabs('project4', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project4-technologies" data-toggle="tab" onclick="changeTabs('project4', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project4-software" data-toggle="tab" onclick="changeTabs('project4', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project4-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project4-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>I was the Web Master for my brother's Bulldog website: Triran Bulldogs. The purpose of this site was to advertise and
-                        sell pure bred bulldog puppies. The website features a JQuery photo gallery on the home page with an mp3 file playing
-                        in the background, using an HTML5 audio format tag. The song is titled &ldquo;Puppy Love&rdquo; and it's by Paul Anka.
-                        This website was made responsive to various screen sizes such as mobile and tablet screens by utilizing the Bootstrap
-                        templating library grid system which shrinks/expands, shifts and moves elements on the screen to create a more pleasing
-                        and user-friendly experience. The site also has a webform that uses php to submit an email with a reCaptcha widget included
-                        to verify that a real person is submitting the form and not a spam bot.
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="project4-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/php_logo.png" width="70" alt="PHP logo"><br>PHP
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/re-captcha-logo.png" width="70" alt="reCaptcha logo"><br>reCaptcha
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project4-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/dreamweaver-logo.png" width="70" alt="Dreamweaver logo"><br>Dreamweaver
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-              </div>
-              <div class="col-md-4 col-sm-6 project">
-                  <a href="http://www5.fdic.gov/idasp" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/fdic_bank_search_thumbnail.png" alt="City Walk Pet Care" >
-                  <h3>FDIC Institution Directory Search</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project6" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project6-description" onclick="changeTabs('project6', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project6-technologies" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project6-software" data-toggle="tab" onclick="changeTabs('project6', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project6-content" class="tab-content project-description">
-                        <div class="tab-pane fade show active" id="project6-description-content" role="tabpanel" aria-labelledby="description-tab">
+                  <div class="project-container">
+                    <a href="Space_Fighters/index.html" target="_blank">
+                      <img class="img-fluid" src="images/project_thumbnails/Space_Fighters_thumbnail.png" alt="Space Fighters Game" >
+                      <h3>Space Fighters Game</h3>
+                      <ul class="nav nav-tabs col-sm-12" id="project9" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="project9-description" onclick="changeTabs('project9', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project9-technologies" data-toggle="tab" onclick="changeTabs('project9', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project9-software" data-toggle="tab" onclick="changeTabs('project9', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                        </li>
+                      </ul>
+                      <div id="project9-content" class="tab-content project-description">
+                        <div class="tab-pane fade show active" id="project9-description-content" role="tabpanel" aria-labelledby="description-tab">
                           <h5>Description:</h5>
                           <p>
-                            This is a search application for the Federal Deposit Insurance Corporation (FDIC) used to search
-                            FDIC insured banks in the United States. The application uses two sets of panels that are
-                            horizontal and vertical. Each horizontal panel has a subset of vertical panels that allow
-                            the user to search for specific criteria about banks such as identification number, name, location,
-                            establishment dates, assets, and status.
+                              This is an interactive computer game made solely with HTML5, CSS3, and JavaScript. The objective of the game is to
+                              shoot missles at enemy UFOs flying around on the screen and destroy all five while avoiding a collision attack which
+                              detroys their spaceship. The player is given three ships from the start. Music is played in the background and sound effects are applied to
+                              the launch of the missles, explosion of the UFOs, and rocketship when impacted.
                           </p>
                         </div>
-                        <div class="tab-pane fade" id="project6-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <div class="tab-pane fade" id="project9-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                          <h5>Technologies Used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="project9-software-content" role="tabpanel" aria-labelledby="software-tab">
+                          <h5>Software used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div><!-- end project-container -->
+                </div><!--end project-->
+                <div class="col-md-4 col-sm-6 project">
+                  <div class="project-container">
+                    <a href="Memory_Card_Game/match.html" target="_blank">
+                      <img class="img-fluid" src="images/project_thumbnails/memory_card_game_thumbnail.png" alt="Memory Card Game" >
+                      <h3>Memory Card Game</h3>
+                      <ul class="nav nav-tabs col-sm-12" id="project10" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="project10-description" onclick="changeTabs('project10', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project10-technologies" data-toggle="tab" onclick="changeTabs('project10', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project10-software" data-toggle="tab" onclick="changeTabs('project10', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                        </li>
+                      </ul>
+                      <div id="project10-content" class="tab-content project-description">
+                        <div class="tab-pane fade show active" id="project10-description-content" role="tabpanel" aria-labelledby="description-tab">
+                          <h5>Description:</h5>
+                          <p>
+                              This is a memory card game that uses a deck of 52 playing cards. The rules are: match two card
+                              names while ignoring the suit. For example, a 2 of clubs matches any other 2 regardless of suit.
+                              Therefore, there are 26 matches to find. The number of matches and attempts are tracked at the bottom,
+                              and a message is displayed at the top indicating whether a match was found or not. JavaScript is used
+                              to randomly shuffle the cards, flip them over on user click, and set the back design of each which can
+                              be set from the dropdown at the top.
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="project10-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                          <h5>Technologies Used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="project10-software-content" role="tabpanel" aria-labelledby="software-tab">
+                          <h5>Software used:</h5>
+                          <div class="tech-icons">
+                            <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div><!-- end project-container -->
+                </div><!--end project-->
+                <div class="col-md-4 col-sm-6 project">
+                  <div class="project-container">
+                    <a href="Rock-Paper-Scissors_Game/rock_paper_scissors.html" target="_blank">
+                      <img class="img-fluid" src="images/project_thumbnails/rock_paper_scissors_thumbnail.png" alt="Rock Paper Scissors Game" >
+                      <h3>Rock Paper Scissors Game</h3>
+                      <ul class="nav nav-tabs col-sm-12" id="project11" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="project11-description" onclick="changeTabs('project11', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project11-technologies" data-toggle="tab" onclick="changeTabs('project11', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="project11-software" data-toggle="tab" onclick="changeTabs('project11', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                        </li>
+                      </ul>
+                      <div id="project10-content" class="tab-content project-description">
+                        <div class="tab-pane fade show active" id="project11-description-content" role="tabpanel" aria-labelledby="description-tab">
+                          <h5>Description:</h5>
+                          <p>
+                              This is a rock-paper-scissors tournament using CSS3 animations that move the hands when a move is played
+                              against the computer. The tournament winner will need to win 3 games, 4 games, 5 games, etc whatever is
+                              chosen from the dropdown menu when the tournament starts.The hands and other graphics are made using Adobe Illustrator and the jQuery
+                              code takes care of the logic and calculates the amount of wins and losses between the user and the
+                              computer.
+                          </p>
+                        </div>
+                        <div class="tab-pane fade" id="project11-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
                           <h5>Technologies Used:</h5>
                           <div class="tech-icons">
                             <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
@@ -1155,200 +1320,34 @@
                           <div class="tech-icons">
                             <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
                           </div>
-                          <div class="tech-icons">
-                            <img src="images/icons/bootstrap-logo.jpeg" width="70" alt="Bootstrap logo"><br>Bootstrap
-                          </div>
                         </div>
-                        <div class="tab-pane fade" id="project6-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <div class="tab-pane fade" id="project11-software-content" role="tabpanel" aria-labelledby="software-tab">
                           <h5>Software used:</h5>
                           <div class="tech-icons">
-                            <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
+                            <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
+                          </div>
+                          <div class="tech-icons">
+                            <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
                           </div>
                         </div>
-                      </a>
-              </div>
-          </div>
-        </div>
-        </div>
-            
-            <div id="games" class="category">
-              <div class="row">
-                <h4>Games</h4>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6 project">
-                  <a href="Space_Fighters/index.html" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/Space_Fighters_thumbnail.png" alt="Space Fighters Game" >
-                  <h3>Space Fighters Game</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project9" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project9-description" onclick="changeTabs('project9', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project9-technologies" data-toggle="tab" onclick="changeTabs('project9', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project9-software" data-toggle="tab" onclick="changeTabs('project9', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project9-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project9-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>
-                          This is an interactive computer game made solely with HTML5, CSS3, and JavaScript. The objective of the game is to
-                          shoot missles at enemy UFOs flying around on the screen and destroy all five while avoiding a collision attack which
-                          detroys their spaceship. The player is given three ships from the start. Music is played in the background and sound effects are applied to
-                          the launch of the missles, explosion of the UFOs, and rocketship when impacted.
-                          </body>
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="project9-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
                       </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project9-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="col-md-4 col-sm-6 project">
-                  <a href="Memory_Card_Game/match.html" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/memory_card_game_thumbnail.png" alt="Memory Card Game" >
-                  <h3>Memory Card Game</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project10" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project10-description" onclick="changeTabs('project10', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project10-technologies" data-toggle="tab" onclick="changeTabs('project10', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project10-software" data-toggle="tab" onclick="changeTabs('project10', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project10-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project10-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>
-                          This is a memory card game that uses a deck of 52 playing cards. The rules are: match two card
-                          names while ignoring the suit. For example, a 2 of clubs matches any other 2 regardless of suit.
-                          Therefore, there are 26 matches to find. The number of matches and attempts are tracked at the bottom,
-                          and a message is displayed at the top indicating whether a match was found or not. JavaScript is used
-                          to randomly shuffle the cards, flip them over on user click, and set the back design of each which can
-                          be set from the dropdown at the top.
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="project10-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project10-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="col-md-4 col-sm-6 project">
-                  <a href="Rock-Paper-Scissors_Game/rock_paper_scissors.html" target="_blank">
-                  <img class="img-fluid" src="images/project_thumbnails/rock_paper_scissors_thumbnail.png" alt="Rock Paper Scissors Game" >
-                  <h3>Rock Paper Scissors Game</h3>
-                  <ul class="nav nav-tabs col-sm-12" id="project11" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="project11-description" onclick="changeTabs('project11', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project11-technologies" data-toggle="tab" onclick="changeTabs('project11', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="project11-software" data-toggle="tab" onclick="changeTabs('project11', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
-                    </li>
-                  </ul>
-                  <div id="project10-content" class="tab-content project-description">
-                    <div class="tab-pane fade show active" id="project11-description-content" role="tabpanel" aria-labelledby="description-tab">
-                      <h5>Description:</h5>
-                      <p>
-                          This is a rock-paper-scissors tournament using CSS3 animations that move the hands when a move is played
-                          against the computer. The tournament winner will need to win 3 games, 4 games, 5 games, etc whatever is
-                          chosen from the dropdown menu when the tournament starts.The hands and other graphics are made using Adobe Illustrator and the jQuery
-                          code takes care of the logic and calculates the amount of wins and losses between the user and the
-                          computer.
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="project11-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
-                      <h5>Technologies Used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="project11-software-content" role="tabpanel" aria-labelledby="software-tab">
-                      <h5>Software used:</h5>
-                      <div class="tech-icons">
-                        <img src="images/icons/atom-logo.png" width="70" alt="Atom logo"><br>Atom
-                      </div>
-                      <div class="tech-icons">
-                        <img src="images/icons/illustrator-logo.png" width="70" alt="reCaptcha logo"><br>Illustrator
-                      </div>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          <footer>
-              <p>&copy; 2017 Stylin' Digital Designs | Designed and Developed by Nick Romano | Raleigh, NC</p>
-          </footer>
+                    </a>
+                  </div><!-- end project-container -->
+                </div><!--end project-->
+            </div><!-- end row -->
+          </div><!-- end games -->
         </section>
     </main>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#photo-gallery').lightGallery();
-        });
+    <footer>
+      <p>Designed and Developed by Nick Romano | Raleigh, NC</p>
+    </footer>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#photo-gallery').lightGallery();
+            });
         </script>
         <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
         <script src="dist/js/lightgallery-all.min.js"></script>
-        <script src="lib/jquery.mousewheel.min.js"></script>
-
-        
+        <script src="lib/jquery.mousewheel.min.js"></script>      
 </body>
 </html>
