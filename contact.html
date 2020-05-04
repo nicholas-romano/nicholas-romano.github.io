@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/tabs.js"></script>
-    <script src="js/lower-content.js"></script>
     <script src="js/validate_contact_form.js"></script>
     <script src="js/validate_form_fields.js"></script>
 
@@ -27,7 +26,10 @@
   <header>
       
     <div id="banner">
-      <a href="index.html" class="logo-text"><h1>Nick Romano</h1></a>
+      <a href="index.html" class="logo-text">
+        <h1>Nick Romano</h1>
+        <h3>Full-Stack Web Developer</h3>
+      </a>
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md">
         <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,22 +43,8 @@
             <li class="nav-item">
               <a class="nav-link" href="skills.html">Skills</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="index.html#applications">Web Applications</a>
-                <a class="dropdown-item" href="index.html#webpage-designs">Webpage Designs</a>
-                <a class="dropdown-item" href="index.html#mobile-app-design">Mobile App Designs</a>
-                <a class="dropdown-item" href="index.html#websites">Websites</a>
-                <a class="dropdown-item" href="index.html#games">Games</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="contact.html">Contact</a>
@@ -64,82 +52,90 @@
           </ul>
         </div>
       </nav>
-
     </div>
 </header>
     <main>
-      <section class="main_category contact">
+      <section class="content_section">
 
-            <div class="contact_form">
-                              <h1>Contact Us</h1>
-                              <h4>Customer Support Phone: <b>(703) 282-8324</b></h4>
-                          <p>If you have questions about my skills and would like to learn more about
-                              what I can do, please don’t hesitate to ask here. I am more than happy
-                              to answer questions you have.</p>
-                          <p class="required"> * Indicates a required field.</p>
-                           <form id="contact_form" class="form-horizontal" onsubmit="return validateContactForm()" action="./processContactForm.php" method="post">
-                            <div class="form-group">
-                              <label for="Name" class="col-sm-1 control-label"><span class="required">*</span>Name</label>
-                              <div class="col-sm-12">
-                                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" maxlength="60">
-                                <div class="name_error">Name is a required field.</div>
-                                <div class="name_valid_error">Name field is invalid.</div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="Company" class="col-sm-1 control-label">Company</label>
-                              <div class="col-sm-12">
-                                <input type="text" class="form-control" id="company" name="company" placeholder="Company name" maxlength="60">
-                                <div class="company_valid_error">Company field is invalid.</div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="Email" class="col-sm-1 control-label"><span class="required">*</span>Email</label>
-                              <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" maxlength="60">
-                                <div class="email_error">Email is a required field.</div>
-                                <div class="email_valid_error">Email field is invalid.</div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="Phone" class="col-sm-1 col-xs-12 control-label">Phone</label>
-                                    <div class="row" style="padding-left: 15px; padding-right: 15px;">
-                                      <div class="col">
-                                        <input type="text" class="form-control" id="phone1" name="phone1" size="3" maxlength="3">
-                                      </div>
-                                      <div class="col">
-                                        <input type="text" class="form-control" id="phone2" name="phone2" size="3" maxlength="3">
-                                      </div>
-                                      <div class="col">
-                                        <input type="text" class="form-control" id="phone3" name="phone3" size="4" maxlength="4">
-                                      </div>
-                                      <div class="phone_valid_error">Phone field is invalid.</div>
-                                    </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="Message" class="col-sm-1 control-label"><span class="required">*</span>Message</label>
-                              <div class="col-sm-12">
-                                  <textarea class="form-control" id="message" name="message" rows="3" maxlength="1000"></textarea>
-                                  <div class="message_error">Message is a required field.</div>
-                                  <div class="message_valid_error">Message field is invalid.</div>
-                              </div>
-                            </div>
+        <section class="column">
 
-                              <div class="form-group">
-                              <div class="col-sm-1"></div>
-                              <div class="col-sm-10">
-                                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LccgekUAAAAANYowr6fwLLdNS0tpp2bvWBtiinE"></div>                              </div>
-                                <p class="recaptcha_error">Please click the box above before submitting.</p>
+            <div class="column-content">
+  
+                  <div class="contact_form">
+                        <h1>Contact Us</h1>
+                        <h4>Customer Support Phone: <b>(703) 282-8324</b></h4>
+                    <p>If you have questions about my skills and would like to learn more about
+                        what I can do, please don’t hesitate to ask here. I am more than happy
+                        to answer questions you have.</p>
+                    <p class="required"> * Indicates a required field.</p>
+                    <form id="contact_form" class="form-horizontal" onsubmit="return validateContactForm()" action="./processContactForm.php" method="post">
+                      <div class="form-group">
+                        <label for="Name" class="col-sm-1 control-label"><span class="required">*</span>Name</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" maxlength="60">
+                          <div class="name_error">Name is a required field.</div>
+                          <div class="name_valid_error">Name field is invalid.</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="Company" class="col-sm-1 control-label">Company</label>
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" id="company" name="company" placeholder="Company name" maxlength="60">
+                          <div class="company_valid_error">Company field is invalid.</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="Email" class="col-sm-1 control-label"><span class="required">*</span>Email</label>
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" maxlength="60">
+                          <div class="email_error">Email is a required field.</div>
+                          <div class="email_valid_error">Email field is invalid.</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="Phone" class="col-sm-1 col-xs-12 control-label">Phone</label>
+                              <div class="row" style="padding-left: 15px; padding-right: 15px;">
+                                <div class="col">
+                                  <input type="text" class="form-control" id="phone1" name="phone1" size="3" maxlength="3">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" id="phone2" name="phone2" size="3" maxlength="3">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" id="phone3" name="phone3" size="4" maxlength="4">
+                                </div>
+                                <div class="phone_valid_error">Phone field is invalid.</div>
                               </div>
-                            <div class="form-group">
-                              <div class="col-sm-offset-1 col-sm-2">
-                                <button id="send" name="submit" type="submit" class="btn btn-primary">Send</button>
-                              </div>
-                            </div>
-                          </form>
+                      </div>
+                      <div class="form-group">
+                        <label for="Message" class="col-sm-1 control-label"><span class="required">*</span>Message</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" id="message" name="message" rows="3" maxlength="1000"></textarea>
+                            <div class="message_error">Message is a required field.</div>
+                            <div class="message_valid_error">Message field is invalid.</div>
+                        </div>
+                      </div>
+  
+                        <div class="form-group">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                          <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LccgekUAAAAANYowr6fwLLdNS0tpp2bvWBtiinE"></div>                              </div>
+                          <p class="recaptcha_error">Please click the box above before submitting.</p>
+                        </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-1 col-sm-2">
+                          <button id="send" name="submit" type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+  
             </div>
+  
+          </section>
 
-        </section>
+      </section>
+      
     </main>
     <footer>
       <p>Designed and Developed by Nick Romano | Raleigh, NC</p>
