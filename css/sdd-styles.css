@@ -169,7 +169,8 @@ section#project_porfolio.content_section {
       width: 100%;
       margin-top: 15px; }
       section#project_porfolio.content_section .category .project .project-container h3 {
-        text-align: center; }
+        text-align: center;
+        border-radius: 10px 10px 0 0; }
     section#project_porfolio.content_section .category h4 {
       color: white;
       font-size: 32px;
@@ -243,9 +244,6 @@ section#project_porfolio.content_section {
   height: 100%;
   padding: 10px; }
 
-img {
-  border-radius: 10px; }
-
 footer {
   background-color: #EBEBEB;
   border-top: 2px solid #262B5E;
@@ -302,5 +300,6 @@ footer {
     background-color: white;
     color: black; }
   .project .nav.nav-tabs .nav-item .nav-link {
-    background-color: #eee;
-    color: #007bff; } }
+    background-color: #eee; }
+    .project .nav.nav-tabs .nav-item .nav-link a {
+      color: #262B5E; } }

@@ -211,6 +211,7 @@ body {
 
         h3 {
           text-align: center;
+          border-radius: 10px 10px 0 0;
         }
       }
 
@@ -292,10 +293,6 @@ body {
       padding: 10px;
     }
 
-    img {
-      border-radius: $round-border;
-    }
-
   footer {
     background-color: #EBEBEB;
     border-top: 2px solid $dark-blue;
@@ -375,6 +372,9 @@ body {
 
     .project .nav.nav-tabs .nav-item .nav-link {
       background-color: #eee;
-      color: #007bff;
+      
+      a {
+        color: $dark-blue;
+      }
     }
   }
