@@ -57,6 +57,78 @@
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 project">
                 <div class="project-container">
+                  <a href="https://create-recipe-book.herokuapp.com/" title="Link to live site" target="_blank">
+                    <h3>Recipe Book</h3>
+                    <img class="img-fluid" src="images/project_thumbnails/Recipe-Book_thumbnail.png" alt="Note Taker">
+                    <ul class="nav nav-tabs col-sm-12" id="recipe-book" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="recipe-book-description" onclick="changeTabs('recipe-book', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="recipe-book-technologies" data-toggle="tab" onclick="changeTabs('recipe-book', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="recipe-book-software" data-toggle="tab" onclick="changeTabs('recipe-book', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="recipe-book-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="recipe-book-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This application gives the user the ability to search for recipes by keyword, diet type, cuisine, or specific
+                          nutrition, and displays only recipes that fit that search criteria. It then allows the user to save recipes to 
+                          their recipe book so that they can be viewed later. A recipe can be viewed from either the Spoonacular API, or
+                          from a saved recipe in the MySQL database. Each recipe has step-by-step instructions to complete a recipe,
+                          providing only information needed such as equipment, ingredients, and instructions with images to match.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="recipe-book-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="NodeJS logo"><br>Node JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/expressjs-logo.png" width="70" alt="NodeJS logo"><br>Express JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/npm-logo.png" width="70" alt="NodeJS logo"><br>Node Package Manager
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/sequelize-logo.png" width="70" alt="Sequelize logo"><br>Sequelize
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/mysql-logo.jpg" width="70" alt="MySQL logo"><br>MySQL
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                        </div>
+                        <div class="tech-icons">
+                          <a href="https://github.com/nicholas-romano/Recipes-Book" title="Link to Git Hub Repo"><img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub</a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="recipe-book-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/mysql-workbench-logo.png" width="70" alt="MySQL Workbench logo"><br>MySQL Workbench
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
+              <div class="col-lg-4 col-md-6 col-sm-12 project">
+                <div class="project-container">
                   <a href="https://note-taker-12.herokuapp.com/" title="Link to live site" target="_blank">
                     <h3>Note Taker</h3>
                     <img class="img-fluid" src="images/project_thumbnails/Note-Taker_thumbnail.png" alt="Note Taker">
@@ -113,7 +185,7 @@
                       <div class="tab-pane fade" id="note-taker-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                       </div>
                     </div>
@@ -174,7 +246,7 @@
                       <div class="tab-pane fade" id="employee-template-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                       </div>
                     </div>
@@ -225,7 +297,7 @@
                       <div class="tab-pane fade" id="readme-generator-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                       </div>
                     </div>
@@ -282,7 +354,7 @@
                       <div class="tab-pane fade" id="places-news-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
@@ -345,7 +417,7 @@
                         <div class="tab-pane fade" id="weather-dashboard-software-content" role="tabpanel" aria-labelledby="software-tab">
                           <h5>Software used:</h5>
                           <div class="tech-icons">
-                            <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                            <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                           </div>
                           <div class="tech-icons">
                             <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
@@ -407,7 +479,7 @@
                       <div class="tab-pane fade" id="work-day-scheduler-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/photoshop-logo.png" width="70" alt="Photoshop logo"><br>Photoshop
@@ -465,7 +537,7 @@
                       <div class="tab-pane fade" id="code-quiz-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div> 
                       </div>
                     </div>
@@ -516,7 +588,7 @@
                       <div class="tab-pane fade" id="password-generator-software-content" role="tabpanel" aria-labelledby="software-tab">
                         <h5>Software used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Atom logo"><br>Visual Studio
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
                         </div>
                       </div>
                     </div>
