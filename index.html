@@ -20,6 +20,7 @@
         <div id="banner">
           <h1>Nick Romano</h1>
           <h3>Full-Stack Web Developer</h3>
+          <div class="resume-download"><label><a href="Documents/Nicholas_Romano_Resume.docx">Download Resumé</a></label></div>
           <!-- Navigation -->
           <nav class="navbar navbar-expand-md">
             <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +60,7 @@
                 <div class="project-container">
                   <a href="https://create-recipe-book.herokuapp.com/" title="Link to live site" target="_blank">
                     <h3>Recipe Book</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/Recipe-Book_thumbnail.png" alt="Note Taker">
+                    <img class="img-fluid" src="images/project_thumbnails/Recipe-Book_thumbnail.png" alt="Recipe Book">
                     <ul class="nav nav-tabs col-sm-12" id="recipe-book" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="recipe-book-description" onclick="changeTabs('recipe-book', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -90,13 +91,13 @@
                           <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="NodeJS logo"><br>Node JS
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="Node JS logo"><br>Node JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/expressjs-logo.png" width="70" alt="NodeJS logo"><br>Express JS
+                          <img src="images/icons/expressjs-logo.png" width="70" alt="Express JS logo"><br>Express JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/npm-logo.png" width="70" alt="NodeJS logo"><br>Node Package Manager
+                          <img src="images/icons/npm-logo.png" width="70" alt="Node Package Manager logo"><br>Node Package Manager
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/sequelize-logo.png" width="70" alt="Sequelize logo"><br>Sequelize
@@ -129,6 +130,78 @@
               </div><!--end project-->
               <div class="col-lg-4 col-md-6 col-sm-12 project">
                 <div class="project-container">
+                  <a href="https://burgers-to-eat.herokuapp.com/" title="Link to live site" target="_blank">
+                    <h3>Burgers To Eat</h3>
+                    <img class="img-fluid" src="images/project_thumbnails/Burgers-to-eat_thumbnail.png" alt="Burgers To Eat">
+                    <ul class="nav nav-tabs col-sm-12" id="burgers-to-eat" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="burgers-to-eat-description" onclick="changeTabs('burgers-to-eat', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="burgers-to-eat-technologies" data-toggle="tab" onclick="changeTabs('burgers-to-eat', id)" href="javascript:void(0)" role="tab" aria-controls="Technologies" aria-selected="false">Technologies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="burgers-to-eat-software" data-toggle="tab" onclick="changeTabs('burgers-to-eat', id)" href="javascript:void(0)" role="tab" aria-controls="Software" aria-selected="false">Software</a>
+                      </li>
+                    </ul>
+                    <div id="burgers-to-eat-content" class="tab-content project-description">
+                      <div class="tab-pane fade show active" id="burgers-to-eat-description-content" role="tabpanel" aria-labelledby="description-tab">
+                        <h5>Description:</h5>
+                        <p>This is application gives the user the ability to enter information into a list, in this case a "Burgers to Devour" list, and then add
+                          each list item to to a second list, the "Burgers Devoured" list when each burger has been eaten. The application uses HandlbarsJS for 
+                          and Bootstrap for the HTML templating to display the data, and uses a ExpressJs with an ORM connection to a MySQL database to store the burger data.
+                          Routes include a SelectAll method to display all the burgers stored in the database, insertOne method to add one to the database, an
+                          updateOne method to update a burger from "to be devoured" to "devoured", and a deleteOne function to delete a burger from the devoured list.
+                        </p>
+                      </div>
+                      <div class="tab-pane fade" id="burgers-to-eat-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
+                        <h5>Technologies Used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/html5-logo.png" width="70" alt="HTML5 logo"><br>HTML5
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="Node JS logo"><br>Node JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/expressjs-logo.png" width="70" alt="Express JS logo"><br>Express JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/handlebars-logo.png" width="70" alt="Handlbars JS logo"><br>Handlbars JS
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/npm-logo.png" width="70" alt="Node Package Manager logo"><br>Node Package Manager
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/mysql-logo.jpg" width="70" alt="MySQL logo"><br>MySQL
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
+                        </div>
+                        <div class="tech-icons">
+                          <a href="https://github.com/nicholas-romano/Recipes-Book" title="Link to Git Hub Repo"><img src="images/icons/github-logo.png" width="70" alt="Git Hub logo"><br>Git Hub</a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="burgers-to-eat-software-content" role="tabpanel" aria-labelledby="software-tab">
+                        <h5>Software used:</h5>
+                        <div class="tech-icons">
+                          <img src="images/icons/visual-studio-logo.png" width="70" alt="Visual Studio logo"><br>Visual Studio
+                        </div>
+                        <div class="tech-icons">
+                          <img src="images/icons/mysql-workbench-logo.png" width="70" alt="MySQL Workbench logo"><br>MySQL Workbench
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div><!--end project-container -->
+              </div><!--end project-->
+              <div class="col-lg-4 col-md-6 col-sm-12 project">
+                <div class="project-container">
                   <a href="https://note-taker-12.herokuapp.com/" title="Link to live site" target="_blank">
                     <h3>Note Taker</h3>
                     <img class="img-fluid" src="images/project_thumbnails/Note-Taker_thumbnail.png" alt="Note Taker">
@@ -146,13 +219,12 @@
                     <div id="note-taker-content" class="tab-content project-description">
                       <div class="tab-pane fade show active" id="note-taker-description-content" role="tabpanel" aria-labelledby="description-tab">
                         <h5>Description:</h5>
-                        <p>This application is used to write and save notes to help users remember important information. When the user has important 
-                          information that needs to be referred back to, the user can enter a title for the note, and a description in the corresponding 
-                          sections labeled Note Title and Note Text. When the note is complete, the user must click the floppy disk icon to save it.
-                          That note is then stored in the list on the left by title. That note can then be accessed again by clicking on it.
-                          A new note can be made when the user clicks the pencil icon on the top-right of the screen.
-                          If the user decides they no longer want any particular note previously saved, they can click the red trash bin icon 
-                          next to its title list item on the right to delete it from the list.
+                        <p>This application is used to write and save notes to help users remember important information. It uses NodeJS, ExpressJS,
+                          and Node's filesytem package to save notes in JSON format using JQuery AJAX calls. Once a note is saved, the user can then 
+                          view the saved notes in the left-hand column. When they click on a saved note, that note's details are displayed in the 
+                          right-side content area and the user can then edit that prevously saved note. The application utilizes ExpressJS get route
+                          to get all note title and just one note details, a post route to create a new note, or to update a note, and a delete route to
+                          delete a saved note.
                         </p>
                       </div>
                       <div class="tab-pane fade" id="note-taker-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
@@ -164,13 +236,13 @@
                           <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="NodeJS logo"><br>Node JS
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="Node JS logo"><br>Node JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/expressjs-logo.png" width="70" alt="NodeJS logo"><br>Express JS
+                          <img src="images/icons/expressjs-logo.png" width="70" alt="Express JS logo"><br>Express JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/npm-logo.png" width="70" alt="NodeJS logo"><br>Node Package Manager
+                          <img src="images/icons/npm-logo.png" width="70" alt="Node Package Manager logo"><br>Node Package Manager
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
@@ -212,11 +284,10 @@
                       <div class="tab-pane fade show active" id="employee-template-description-content" role="tabpanel" aria-labelledby="description-tab">
                         <h5>Description:</h5>
                         <p>This application uses NodeJS in the command line (PC) or terminal (Mac) to prompt the user with questions for entering employees on an IT team. 
-                          There are three employee categories to choose from: Manager, Engineer, and Intern. Name, id, and email are asked for all employee types. However 
-                          other questions are specific to the type of employee. For instance, a Manager will be asked to enter an office number, while an Engineer will be 
-                          asked for their GitHub username, and an Intern will be asked for the school they attended. The user can enter as many employees as they want. 
-                          When they are done, the application uses the data and compiles it into an html file and exports it into the output directory in the user's Develop 
-                          directory of their application. The user can then view the result team.html page in their browser.
+                          The user is asked questions based on employee type which can be either Manager, Engineer, or Intern and the can enter as many employees as they want. 
+                          When they are done, the application compiles the data into a team.html file inside the  Develop directory. They can then view this HTML file in their 
+                          browser. This application uses a JavaScript Object Oriented programming style by using class modules for each employee type: Manager, Engineer, and 
+                          Intern, and then creating an intance of each of those when needed and adding the data for each.
                         </p>
                       </div>
                       <div class="tab-pane fade" id="employee-template-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
@@ -228,13 +299,13 @@
                           <img src="images/icons/css3-logo.jpg" width="70" alt="CSS3 logo"><br>CSS3
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="NodeJS logo"><br>Node JS
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="Node JS logo"><br>Node JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/npm-logo.png" width="70" alt="NodeJS logo"><br>Node Package Manager
+                          <img src="images/icons/npm-logo.png" width="70" alt="Node Package Manager logo"><br>Node Package Manager
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
+                          <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>JavaScript
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/jquery-logo.png" width="70" alt="JQuery logo"><br>JQuery
@@ -257,7 +328,7 @@
                 <div class="project-container">
                   <a href="https://github.com/nicholas-romano/README-File-Generator" title="Link to GitHub repo" target="_blank">
                     <h3>README File Generator</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/README-file-generator_thumbnail.png" alt="Note Taker">
+                    <img class="img-fluid" src="images/project_thumbnails/README-file-generator_thumbnail.png" alt="README File Generator">
                     <ul class="nav nav-tabs col-sm-12" id="readme-generator" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="readme-generator-description" onclick="changeTabs('readme-generator', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -282,10 +353,10 @@
                       <div class="tab-pane fade" id="readme-generator-technologies-content" role="tabpanel" aria-labelledby="technologies-tab">
                         <h5>Technologies Used:</h5>
                         <div class="tech-icons">
-                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="NodeJS logo"><br>Node JS
+                          <img src="images/icons/nodejs-logo.jpg" width="70" alt="Node JS logo"><br>Node JS
                         </div>
                         <div class="tech-icons">
-                          <img src="images/icons/npm-logo.png" width="70" alt="NodeJS logo"><br>Node Package Manager
+                          <img src="images/icons/npm-logo.png" width="70" alt="Node Package Manager logo"><br>Node Package Manager
                         </div>
                         <div class="tech-icons">
                           <img src="images/icons/javascript_logo.png" width="70" alt="JavaScript logo"><br>Javascript
@@ -308,7 +379,7 @@
                 <div class="project-container">
                   <a href="Places-and-News-Search/" target="_blank">
                     <h3>Places and News Search</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/Places-and-News-Search_thumbnail.png" title="Link to live site" alt="News and Photos Application">
+                    <img class="img-fluid" src="images/project_thumbnails/Places-and-News-Search_thumbnail.png" title="Link to live site" alt="Places and News Search">
                     <ul class="nav nav-tabs col-sm-12" id="places-news" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="places-news-description" onclick="changeTabs('places-news', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -368,7 +439,7 @@
                   <div class="project-container">
                     <a href="Weather-Dashboard/" title="Link to live site" target="_blank">
                       <h3>Weather Dashboard</h3>
-                      <img class="img-fluid" src="images/project_thumbnails/Weather-Dashboard_thumbnail.png" alt="Weather Dashboard Application">
+                      <img class="img-fluid" src="images/project_thumbnails/Weather-Dashboard_thumbnail.png" alt="Weather Dashboard">
                       <ul class="nav nav-tabs col-sm-12" id="weather-dashboard" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" id="weather-dashboard-description" onclick="changeTabs('weather-dashboard', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -431,7 +502,7 @@
                 <div class="project-container">
                   <a href="Work-Day-Scheduler/" title="Link to live site" target="_blank">
                     <h3>Work Day Scheduler</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/Work-Day-Scheduler_thumbnail.png" alt="Work Day Scheduler Application">
+                    <img class="img-fluid" src="images/project_thumbnails/Work-Day-Scheduler_thumbnail.png" alt="Work Day Scheduler">
                     <ul class="nav nav-tabs col-sm-12" id="work-day-scheduler-dashboard" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="work-day-scheduler-description" onclick="changeTabs('work-day-scheduler', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -493,7 +564,7 @@
                 <div class="project-container">
                   <a href="Code-Quiz/" title="Link to live site" target="_blank">
                     <h3>Code Quiz</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/Code-Quiz_thumbnail.png" alt="Code Quiz Application">
+                    <img class="img-fluid" src="images/project_thumbnails/Code-Quiz_thumbnail.png" alt="Code Quiz">
                     <ul class="nav nav-tabs col-sm-12" id="code-quiz" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="code-quiz-description" onclick="changeTabs('code-quiz', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -548,7 +619,7 @@
                 <div class="project-container">
                   <a href="Password-Generator/" title="Link to live site" target="_blank">
                     <h3>Password Generator</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/Password-Generator_thumbnail.png" alt="Password Generator Application">
+                    <img class="img-fluid" src="images/project_thumbnails/Password-Generator_thumbnail.png" alt="Password Generator">
                     <ul class="nav nav-tabs col-sm-12" id="password-generator" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="password-generator-description" onclick="changeTabs('password-generator', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -599,7 +670,7 @@
                 <div class="project-container">
                   <a href="shoppers-stop/" title="Link to live site" target="_blank">
                     <h3>Shoppers Stop</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/shoppers-stop-thumbnail.png" alt="Shoppers Stop Application">
+                    <img class="img-fluid" src="images/project_thumbnails/shoppers-stop-thumbnail.png" alt="Shoppers Stop">
                     <ul class="nav nav-tabs col-sm-12" id="shoppers-stop" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="shoppers-stop-description" onclick="changeTabs('shoppers-stop', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -658,7 +729,7 @@
                 <div class="project-container">
                     <a href="stop-watch/" title="Link to live site" target="_blank">
                       <h3>Stop Watch</h3>
-                      <img class="img-fluid" src="images/project_thumbnails/stop-watch-thumbnail.png" alt="Stop Watch Application" >
+                      <img class="img-fluid" src="images/project_thumbnails/stop-watch-thumbnail.png" alt="Stop Watch" >
                       <ul class="nav nav-tabs col-sm-12" id="stop-watch" role="tablist">
                         <li class="nav-item">
                           <a class="nav-link active" id="stop-watch-description" onclick="changeTabs('stop-watch', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
@@ -717,7 +788,7 @@
                 <div class="project-container">
                   <a href="movie-discovery/" title="Link to live site" target="_blank">
                     <h3>Movie Discovery</h3>
-                    <img class="img-fluid" src="images/project_thumbnails/movies-app_thumbnail.png" alt="Movies Search Application" >
+                    <img class="img-fluid" src="images/project_thumbnails/movies-app_thumbnail.png" alt="Movies Search" >
                     <ul class="nav nav-tabs col-sm-12" id="movie-discovery" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="movie-discovery-description" onclick="changeTabs('movie-discovery', id)" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="Description" aria-selected="true">Description</a>
