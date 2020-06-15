@@ -14,13 +14,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sdd-styles.css" />
-    <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('g-recaptcha', {
-          'sitekey' : '6LccgekUAAAAANYowr6fwLLdNS0tpp2bvWBtiinE'
-        });      
-      };
-    </script>
 </head>
 <body>
   <header>
@@ -115,13 +108,7 @@
                             <div class="message_valid_error">Message field is invalid.</div>
                         </div>
                       </div>
-  
-                        <div class="form-group">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-10">
-                          <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LccgekUAAAAANYowr6fwLLdNS0tpp2bvWBtiinE"></div>                              </div>
-                          <p class="recaptcha_error">Please click the box above before submitting.</p>
-                        </div>
+                  
                       <div class="form-group">
                         <div class="col-sm-offset-1 col-sm-2">
                           <button id="send" name="submit" type="submit" class="btn btn-primary">Send</button>
@@ -140,17 +127,5 @@
     <footer>
       <p>Designed and Developed by Nick Romano | Raleigh, NC</p>
     </footer>
-    <script type="text/javascript">
-      if (window.location.href.indexOf('#retry') !== -1) {
-        $('.recaptcha_error').show();
-        console.log('show error');
-      }
-      else {
-        $('.recaptcha_error').hide();
-        console.log('hide error');
-
-      }
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 </html>
