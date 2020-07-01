@@ -280,6 +280,25 @@ body {
               border: none;
           }
 
+  .action-btn.btn.btn-primary {
+    width: 50%;
+    float: left;
+    border: 2px solid white;
+  }
+
+  .action-btn.btn.btn-primary:hover {
+    background-color: #3C4285;
+  }
+
+  .action-btn-full.btn.btn-primary {
+    width: 100%;
+    border: 2px solid white;
+  }
+
+  .action-btn-full.btn.btn-primary:hover {
+    background-color: #3C4285;
+  }
+
   .message_sent_confirmation {
               padding: 50px;
               margin: 50px;
